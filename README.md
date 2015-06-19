@@ -8,7 +8,9 @@ Let's get the party rocking!
 ## Staff
 
 Online Marketing Director: Jordan Dang
+
 Web Developers: Daniel Huang and Ky-Cuong Huynh
+
 Designed by the CEC Print department. 
 
 
