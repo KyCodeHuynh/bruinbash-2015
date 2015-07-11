@@ -1,0 +1,87 @@
+
+@font-face {
+    font-family: 'Parade Snoop';
+    src: url('../fonts/parade_snoop-webfont.eot');
+    src: url('../fonts/parade_snoop-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/parade_snoop-webfont.woff2') format('woff2'),
+    url('../fonts/parade_snoop-webfont.woff') format('woff'),
+    url('../fonts/parade_snoop-webfont.ttf') format('truetype'),
+    url('../fonts/parade_snoop-webfont.svg#parade_lift_snoop') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Large desktop */
+@media (min-width: 1200px) {
+    .clock{
+        zoom: 1.7;
+        -moz-transform: scale(1.7)
+    }
+    #date{
+        font-size:850%;
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .clock{
+        zoom: .8;
+        -moz-transform: scale(.8)
+    }
+    #date{
+        font-size:100px;
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+    .clock{
+        zoom: .8;
+        -moz-transform: scale(.8)
+    }
+    #date {
+        font-size: 40px;
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    .clock{
+        zoom: .5;
+        -moz-transform: scale(.7)
+    }
+    #date{
+        font-size:30px;
+    }
+    #tag-line{
+        font-size: 25px;
+    }
+}
+
+body{
+    background-color: rgb(250,226,45);
+    font-family:"Parade Snoop", sans-serif !important;
+}
+
+.sm-buffer{
+    height:10px;
+    width:100%;
+}
+
+#social-media{
+    height: 100px;
+    width: 100%;
+    padding:2%;
+    margin-bottom:3%;
+}
+
+#date{
+    text-align:center;
+    margin:0% 6% 6% 3%;
+}
+
+#tag-line{
+    text-align: center;
+}
+
