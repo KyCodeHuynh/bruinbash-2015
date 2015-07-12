@@ -64,6 +64,10 @@ body{
     font-family:"Parade Snoop", sans-serif !important;
 }
 
+.clock{
+    margin: 30% 0% 0% 3%
+}
+
 .sm-buffer{
     height:10px;
     width:100%;
@@ -84,4 +88,8 @@ body{
 #tag-line{
     text-align: center;
 }
+
+/* slideshow */
+
+
 
