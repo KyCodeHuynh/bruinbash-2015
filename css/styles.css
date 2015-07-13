@@ -143,13 +143,12 @@ body{
 
 .bbash {
     display:none;
-    height:auto;
     margin-right:auto;
     margin-left:auto;
-    width: 100%;
-    .slideshow-image {
-        width: 100%;    
-    }
+}
+.slideshow-img {
+    margin-right:auto;
+    margin-left:auto;
 }
 
 .flag-pole {
