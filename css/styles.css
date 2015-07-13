@@ -22,6 +22,9 @@
     #date{
         font-size: 110px;
     }
+    .bbash{
+        width: 72%;
+    }
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -32,6 +35,9 @@
     }
     #date{
         font-size:80px;
+    }
+    .bbash{
+        width: 72%;
     }
 }
 
@@ -77,6 +83,46 @@ body{
 
 }
 
+.large-buffer{
+    height:58px;
+    width:100%;
+}
+
+.bar{
+    height:20px;
+    width:100%;
+    background-color:#323434;
+    z-index:4;
+}
+
+#flag-pole{
+    position:absolute;
+    z-index:3;
+    height:400px !important;
+    width:2%;
+    background-color:#323434;
+    top:225px;
+    bottom:0;
+    right:0;
+    left: 50%;
+}
+
+.barrer{
+    position:absolute;
+    background-color:#323434;
+    z-index:3;
+    height:100px;
+    width:100px;
+    top:225px;
+    opacity: 99;
+    left:50%;
+}
+
+.temp-buffer{
+    height:625px;
+    width: 100%;
+}
+
 #social-media{
     height: 100px;
     width: 100%;
@@ -93,6 +139,39 @@ body{
 }
 
 /* slideshow */
+.carousel.fade {
+    opacity: 1;
+}
+.carousel.fade .item {
+    -moz-transition: opacity ease-in-out .7s;
+    -o-transition: opacity ease-in-out .7s;
+    -webkit-transition: opacity ease-in-out .7s;
+    transition: opacity ease-in-out .7s;
+    left: 0 !important;
+    opacity: 0;
+    top:0;
+    position:absolute;
+    width: 100%;
+    display:block !important;
+    z-index:1;
+}
+.carousel.fade .item:first-child {
+    top:auto;
+    position:relative;
+}
+.carousel.fade .item.active {
+    opacity: 1;
+    -moz-transition: opacity ease-in-out .7s;
+    -o-transition: opacity ease-in-out .7s;
+    -webkit-transition: opacity ease-in-out .7s;
+    transition: opacity ease-in-out .7s;
+    z-index:2;
+}
 
-
+.bbash{
+    display:none;
+    height: auto;
+    margin-right:auto;
+    margin-left:auto;
+}
 
