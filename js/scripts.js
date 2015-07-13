@@ -10,9 +10,12 @@ jQuery(document).ready(function(){
     clockFace: 'DailyCounter',
     countdown: true}
     );
+    var browserHeight=$(window).height();
     var pole=$('#flag-pole');
+    var bbash=$('.bbash');
     setTimeout(function(){
+        bbash.css({'height':"browserHeight"});
         $('.temp-buffer').fadeOut();
-        $('.bbash').fadeIn('slow');
+        bbash.fadeIn('slow');
     }, 5000);
 });
