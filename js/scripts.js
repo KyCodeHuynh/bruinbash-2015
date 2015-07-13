@@ -11,12 +11,16 @@ jQuery(document).ready(function(){
     countdown: true}
     );
     var browserHeight=$(window).height()-20;
-    $(".slideshow-img").css({'height':browserHeight + "px"});
+    var browserWidth=$(window).width();
+    if(browserWidth<1700 && browserWidth>767){
+        $(".slideshow-img").css({'height':browserHeight + "px"});
+    }
     var pole=$('#flag-pole');
     var bbash=$('.bbash');
     setTimeout(function(){
-        $('.temp-buffer').fadeOut();
+        $('.temp-buffer').css({"display":"none"});
+        $('.sm-temp-buffer').css({"display":"none"});
         bbash.fadeIn('slow');
-    }, 5000);
+    }, 6000);
 
 });
