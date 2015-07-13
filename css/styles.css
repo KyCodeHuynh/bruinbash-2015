@@ -20,9 +20,6 @@
     #date{
         font-size: 110px;
     }
-    .bbash{
-        width: 72%;
-    }
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -33,9 +30,6 @@
     }
     #date{
         font-size:80px;
-    }
-    .bbash{
-        width: 72%;
     }
 }
 
@@ -87,7 +81,7 @@ body{
 }
 
 .bar{
-    height:100px;
+    height:20px;
     width:100%;
     background-color:#323434;
     z-index:4;
@@ -147,11 +141,15 @@ body{
     z-index:2;
 }
 
-.bbash{
+.bbash {
     display:none;
     height:auto;
     margin-right:auto;
     margin-left:auto;
+    width: 100%;
+    .slideshow-image {
+        width: 100%;    
+    }
 }
 
 .flag-pole {
