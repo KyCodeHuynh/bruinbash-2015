@@ -75,6 +75,7 @@
 body{
     background-color: rgb(250,226,45);
     font-family:"Parade Snoop", sans-serif !important;
+    color:black;
 }
 
 .clock{
@@ -97,9 +98,25 @@ body{
 .bar{
     height:20px;
     width:100%;
-    background-color:#323434;
-    z-index:4;
+    background-color:black;
 }
+#top, #bottom, #left, #right {
+    background: black;
+    position: fixed;
+}
+#left, #right {
+    top: 0; bottom: 0;
+    width: 15px;
+}
+#left { left: 0; }
+#right { right: 0; }
+
+#top, #bottom {
+    left: 0; right: 0;
+    height: 15px;
+}
+#top { top: 0; }
+#bottom { bottom: 0; }
 
 .temp-buffer{
     height:625px;
@@ -128,6 +145,14 @@ body{
 
 #tag-line{
     text-align: center !important;
+}
+
+#star{
+
+}
+
+.main{
+    display:none;
 }
 
 .flag-pole {

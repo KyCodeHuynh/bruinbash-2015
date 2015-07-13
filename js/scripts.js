@@ -3,6 +3,10 @@
  */
 
 jQuery(document).ready(function(){
+    var browserWidth=$(window).width();
+    if(browserWidth<767){
+        document.location = "m.index.html";
+    }
     var date = new Date(2015, 9, 21);
     var now = new Date();
     var diff = (date.getTime()/1000) - (now.getTime()/1000);
@@ -10,11 +14,8 @@ jQuery(document).ready(function(){
     clockFace: 'DailyCounter',
     countdown: true}
     );
-    var browserHeight=$(window).height()-20;
-    var browserWidth=$(window).width();
-    if(browserWidth<1700 && browserWidth>767){
-        $(".slideshow-img").css({'height':browserHeight + "px"});
-    }
+
+
     var pole=$('#flag-pole');
     var bbash=$('.bbash');
     setTimeout(function(){
