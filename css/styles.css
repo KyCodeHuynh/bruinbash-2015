@@ -1,4 +1,3 @@
-
 @font-face {
     font-family: 'Parade Snoop';
     src: url('../fonts/parade_snoop-webfont.eot');
@@ -88,7 +87,7 @@ body{
 }
 
 .bar{
-    height:20px;
+    height:100px;
     width:100%;
     background-color:#323434;
     z-index:4;
@@ -150,7 +149,7 @@ body{
 
 .bbash{
     display:none;
-    height: auto;
+    height:auto;
     margin-right:auto;
     margin-left:auto;
 }

@@ -24,4 +24,12 @@ jQuery(document).ready(function(){
             $('.flag-pole').fadeIn('slow');
         }, 200)
     }, 4000);
+    // var browserHeight=$(window).height();
+    // var pole=$('#flag-pole');
+    // var bbash=$('.bbash');
+    // setTimeout(function(){
+    //     bbash.css({'height':"browserHeight"});
+    //     $('.temp-buffer').fadeOut();
+    //     bbash.fadeIn('slow');
+    // }, 5000);
 });
