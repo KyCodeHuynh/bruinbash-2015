@@ -22,14 +22,18 @@ jQuery(document).ready(function(){
     });
 
     var pole=$('#flag-pole');
-    var bbash=$('.bbash');
-
+    var slideshow=$('#slideshow');
+    slideshow.css({
+        'top':(browserHeight *.25) +'px',
+        'left':(browserWidth *.43)+'px'
+    });
     pole.css({
         'top':(browserHeight *.05999999) +'px',
         'left':(browserWidth *.3)+'px'
     });
 
     enter.on('click',function(){
+        slideshow.fadeOut('fast');
         pole.fadeOut('fast');
         enter.fadeOut('fast');
        $('body').animate({

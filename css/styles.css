@@ -170,6 +170,13 @@ body{
     margin-left:auto;
 }
 
+#slideshow{
+    position: absolute;
+    z-index:1;
+    height:200px;
+    width:auto;
+}
+
 /* slideshow */
 .carousel.fade {
     opacity: 1;
