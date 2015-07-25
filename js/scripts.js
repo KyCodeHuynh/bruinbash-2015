@@ -25,7 +25,7 @@ jQuery(document).ready(function(){
     var slideshow=$('#slideshow');
     slideshow.css({
         'top':(browserHeight *.25) +'px',
-        'left':(browserWidth *.43)+'px'
+        'left':(browserWidth *.2)+'px'
     });
     pole.css({
         'top':(browserHeight *.05999999) +'px',
