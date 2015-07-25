@@ -4,6 +4,7 @@
 
 jQuery(document).ready(function(){
     var browserWidth=$(window).width();
+    var browserHeight=$(window).height();
     if(browserWidth<767){
         document.location = "m.index.html";
     }
@@ -14,14 +15,27 @@ jQuery(document).ready(function(){
     clockFace: 'DailyCounter',
     countdown: true}
     );
-
+    var enter=$('.enter');
+    enter.css({
+        'top':(browserHeight *.25) +'px',
+        'left':(browserWidth *.4)+'px'
+    });
 
     var pole=$('#flag-pole');
     var bbash=$('.bbash');
-    setTimeout(function(){
-        $('.temp-buffer').css({"display":"none"});
-        $('.sm-temp-buffer').css({"display":"none"});
-        bbash.fadeIn('slow');
-    }, 6000);
+
+    pole.css({
+        'top':(browserHeight *.05999999) +'px',
+        'left':(browserWidth *.3)+'px'
+    });
+
+    enter.on('click',function(){
+        pole.fadeOut('fast');
+        enter.fadeOut('fast');
+       $('body').animate({
+           backgroundColor:' rgb(250,226,45)'
+       },'fast');
+        $('.main').fadeIn('slow');
+    });
 
 });
