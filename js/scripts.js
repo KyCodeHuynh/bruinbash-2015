@@ -26,6 +26,9 @@ function animation(){
     logo.css({
         'width':(browserWidth *.4)+'px'
     });
+    $('#clicker').css({
+        'width':browserWidth+'px'
+    });
     logo.on('click',function(){
         $('.intro').fadeOut();
         setTimeout(function(){
