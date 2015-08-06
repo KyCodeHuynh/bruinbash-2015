@@ -17,7 +17,7 @@
 .flip-clock-wrapper a {
   cursor: pointer;
   text-decoration: none;
-  color: rgb(250,226,45); }
+  color: white; }
 
 .flip-clock-wrapper a:hover {
   color: #fff; }
@@ -47,7 +47,7 @@
   box-shadow: 0 0 0 !important;
   font-size: 36px !important; }
 
-.flip-clock-meridium a { color: rgb(250,226,45); }
+.flip-clock-meridium a { color: white; }
 
 .flip-clock-wrapper {
   text-align: center;
@@ -77,7 +77,7 @@
   font-weight: bold;
   line-height: 87px;
   border-radius: 6px;
-  background: rgb(250,226,45);;
+  background: white;
 }
 
 .flip-clock-wrapper ul li {
@@ -149,7 +149,7 @@
   height: 200%;
   color: black;
   text-align: center;
-  background-color: rgb(250,226,45);
+  background-color: white;
   border-radius: 6px;
   font-size: 70px; }
 

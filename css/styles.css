@@ -76,6 +76,7 @@ body{
     background-color:white;
     font-family:"Parade Snoop", sans-serif !important;
     color:black;
+    position:relative;
 }
 
 .clock{
@@ -101,22 +102,71 @@ body{
     background-color:black;
 }
 #top, #bottom, #left, #right {
-    background: black;
     position: fixed;
 }
 #left, #right {
+
     top: 0; bottom: 0;
     width: 15px;
 }
-#left { left: 0; }
-#right { right: 0; }
+#left {
+    left: 0;
+    background: linear-gradient(270deg, lightblue, yellow);
+    background-size: 400% 400%;
+    /*background: linear-gradient(yellow,lightblue);*/
+    -webkit-animation: AnimationName 1s ease infinite;
+    -moz-animation: AnimationName 1s ease infinite;
+    animation: AnimationName 1s ease infinite;
+}
+#right {
+    right: 0;
+    background: linear-gradient(270deg, lightblue, yellow);
+    background-size: 400% 400%;
+    /*background: linear-gradient(lightblue, yellow);*/
+    -webkit-animation: AnimationName 1s ease infinite;
+    -moz-animation: AnimationName 1s ease infinite;
+    animation: AnimationName 1s ease infinite;
+}
 
 #top, #bottom {
     left: 0; right: 0;
     height: 15px;
 }
-#top { top: 0; }
-#bottom { bottom: 0; }
+#top {
+    top: 0;
+    background: linear-gradient(270deg, lightblue, yellow);
+    background-size: 400% 400%;
+    /*background: linear-gradient(to right,yellow,lightblue);*/
+    -webkit-animation: AnimationName 1s ease infinite;
+    -moz-animation: AnimationName 1s ease infinite;
+    animation: AnimationName 1s ease infinite;
+}
+#bottom {
+    bottom: 0;
+    background: linear-gradient(270deg, lightblue, yellow);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 1s ease infinite;
+    -moz-animation: AnimationName 1s ease infinite;
+    animation: AnimationName 1s ease infinite;
+}
+
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 51%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 51%}
+}
 
 .temp-buffer{
     height:625px;
@@ -132,11 +182,6 @@ body{
     height: 100px;
     width: 100%;
     padding: 2%;
-    margin-bottom: 3%;
-}
-
-#flag {
-    margin-bottom: 3%;
 }
 
 #date{
@@ -148,33 +193,16 @@ body{
 }
 
 
-
-.enter{
-    /*background-color:black;*/
-    height:250px;
-    width:350px;
-    position:absolute;
-    z-index:3;
-    cursor:pointer;
-}
-
 .main{
     display:none;
 }
 
-#flag-pole {
-    position: absolute;
-    z-index: 2;
+#logo{
+    cursor: pointer;
     display:block;
+    margin-top:1.5%;
     margin-right:auto;
     margin-left:auto;
-}
-
-#slideshow{
-    position: absolute;
-    z-index:1;
-    height:470px;
-    width:auto;
 }
 
 /* slideshow */
