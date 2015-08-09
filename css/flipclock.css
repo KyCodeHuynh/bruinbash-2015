@@ -47,7 +47,7 @@
   box-shadow: 0 0 0 !important;
   font-size: 36px !important; }
 
-.flip-clock-meridium a { color: white; }
+.flip-clock-meridium a { color:transparent; }
 
 .flip-clock-wrapper {
   text-align: center;
@@ -149,7 +149,7 @@
   height: 200%;
   color: black;
   text-align: center;
-  background-color: white;
+  background: linear-gradient(rgb(212, 240, 249), #d5ffff,white);
   border-radius: 6px;
   font-size: 70px; }
 

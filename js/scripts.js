@@ -22,24 +22,74 @@ jQuery(document).ready(function(){
 function animation(){
     var browserWidth=$(window).width();
     var browserHeight=$(window).height();
-    var logo= $("#logo");
-    logo.css({
-        'width':(browserWidth *.4)+'px'
+    var images=$('.images');
+    var x=$('#x');
+    $('#twok15').css({
+        'top':(browserHeight *.7)+'px',
+        'left':(browserWidth *.3)+'px'
     });
-    if(browserWidth<757){
-        $('#clicker').css({
-            'width':browserWidth+'px'
-        });
-    }
-    else{
-        $('#clicker').css({
-            'width':browserWidth *.4+'px'
-        });
-    }
-    logo.on('click',function(){
+    $('#click').css({
+        'width':(browserWidth *.4)+'px',
+       'top':(browserHeight *.05)+'px',
+        'left':(browserWidth *.59)
+    });
+    responsiveImg();
+    images.on('click',function(){
         $('.intro').fadeOut();
         setTimeout(function(){
-            $('.main').fadeIn('slow');
+            $('.main').fadeIn(1000);
         },1000);
     });
+    x.on('click',function(){
+        responsiveImg();
+        $('.main').fadeOut();
+        $('.intro').fadeIn();
+    });
+}
+
+function responsiveImg(){
+    var browserWidth=$(window).width();
+    var browserHeight=$(window).height();
+    var images=$('.images');
+    var x=$('#x');
+    $('body').css({
+        'height':browserHeight+'px'
+    });
+    if(browserWidth<757){
+        x.css({
+            'right':"40px"
+        });
+        images.css({
+            'width':(browserWidth *.7)+'px',
+            'top':(browserHeight *.4)+'px',
+            'left':(browserWidth *.15)+'px'
+        });
+        $('#flag').animate({
+            'top':(browserHeight *.02)+'px'
+        },1500);
+        $('#slideshow').animate({
+            'top':(browserHeight *.5)+'px'
+        },1500);
+    }
+    else{
+        x.css({
+            'right':"40px"
+        });
+        images.css({
+            'width':(browserWidth *.4)+'px',
+            'top':(browserHeight *.1)+'px',
+            'left':(browserWidth *.3)+'px'
+        });
+        $('#flag').animate({
+            'top':(browserHeight *.15)+'px',
+            'left':(browserWidth *.59)+'px'
+        },1500, function(){
+            $('#twok15').fadeIn();
+            $('#click').fadeIn();
+        });
+        $('#slideshow').animate({
+            'top':(browserHeight *.03)+'px',
+            'left':(browserWidth *.02)+'px'
+        },1500);
+    }
 }

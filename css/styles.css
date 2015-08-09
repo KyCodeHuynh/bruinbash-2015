@@ -20,9 +20,6 @@
     #date{
         font-size: 110px;
     }
-    .flag-pole {
-        height: 625px;
-    }
 }
 
 /* Portrait tablet to landscape and desktop */
@@ -34,9 +31,6 @@
     #date{
         font-size:80px;
     }
-    .flag-pole {
-        height: 625px;
-    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -47,10 +41,6 @@
     }
     #date {
         font-size: 40px;
-    }
-    .flag-pole {
-        top:10px;
-        height: 250px;
     }
 }
 
@@ -66,17 +56,30 @@
     #tag-line {
         font-size: 25px;
     }
-    .flag-pole {
-        top:10px;
-        height: 250px;
-    }
+
+}
+
+.images{
+    position: absolute;
+    cursor: pointer;
 }
 
 body{
-    background-color:white;
+    background:linear-gradient(rgb(145, 216, 239),white,rgb(246, 238, 27));
     font-family:"Parade Snoop", sans-serif !important;
     color:black;
     position:relative;
+}
+
+#x{
+    position:absolute;
+    font-size:40px;
+    cursor:pointer;
+}
+
+#twok15{
+    position:absolute;
+    display:none;
 }
 
 .clock{
@@ -101,72 +104,7 @@ body{
     width:100%;
     background-color:black;
 }
-#top, #bottom, #left, #right {
-    position: fixed;
-}
-#left, #right {
 
-    top: 0; bottom: 0;
-    width: 15px;
-}
-#left {
-    left: 0;
-    background: linear-gradient(270deg, lightblue, yellow);
-    background-size: 400% 400%;
-    /*background: linear-gradient(yellow,lightblue);*/
-    -webkit-animation: AnimationName 1s ease infinite;
-    -moz-animation: AnimationName 1s ease infinite;
-    animation: AnimationName 1s ease infinite;
-}
-#right {
-    right: 0;
-    background: linear-gradient(270deg, lightblue, yellow);
-    background-size: 400% 400%;
-    /*background: linear-gradient(lightblue, yellow);*/
-    -webkit-animation: AnimationName 1s ease infinite;
-    -moz-animation: AnimationName 1s ease infinite;
-    animation: AnimationName 1s ease infinite;
-}
-
-#top, #bottom {
-    left: 0; right: 0;
-    height: 15px;
-}
-#top {
-    top: 0;
-    background: linear-gradient(270deg, lightblue, yellow);
-    background-size: 400% 400%;
-    /*background: linear-gradient(to right,yellow,lightblue);*/
-    -webkit-animation: AnimationName 1s ease infinite;
-    -moz-animation: AnimationName 1s ease infinite;
-    animation: AnimationName 1s ease infinite;
-}
-#bottom {
-    bottom: 0;
-    background: linear-gradient(270deg, lightblue, yellow);
-    background-size: 400% 400%;
-    -webkit-animation: AnimationName 1s ease infinite;
-    -moz-animation: AnimationName 1s ease infinite;
-    animation: AnimationName 1s ease infinite;
-}
-
-
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-}
-@keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-}
 
 .temp-buffer{
     height:625px;
@@ -182,7 +120,7 @@ body{
     height: 100px;
     width: 100%;
     padding: 2%;
-    margin-top:3%;
+    margin-top:1%;
     margin-left:2%;
 }
 
@@ -193,7 +131,6 @@ body{
 #tag-line{
     text-align: center !important;
 }
-
 
 .main{
     display:none;
@@ -207,43 +144,5 @@ body{
     margin-left:auto;
 }
 
-/* slideshow */
-.carousel.fade {
-    opacity: 1;
-}
-.carousel.fade .item {
-    -moz-transition: opacity ease-in-out .3s;
-    -o-transition: opacity ease-in-out .3s;
-    -webkit-transition: opacity ease-in-out .3s;
-    transition: opacity ease-in-out .3s;
-    left: 0 !important;
-    opacity: 0;
-    top:0;
-    position:absolute;
-    width: 100%;
-    display:block !important;
-    z-index:1;
-}
-.carousel.fade .item:first-child {
-    top:auto;
-    position:relative;
-}
-.carousel.fade .item.active {
-    opacity: 1;
-    -moz-transition: opacity ease-in-out .3s;
-    -o-transition: opacity ease-in-out .3s;
-    -webkit-transition: opacity ease-in-out .3s;
-    transition: opacity ease-in-out .3s;
-    z-index:2;
-}
 
-.bbash {
-    display:none;
-    margin-right:auto;
-    margin-left:auto;
-}
-.slideshow-img {
-    margin-right:auto;
-    margin-left:auto;
-}
 
