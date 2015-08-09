@@ -25,7 +25,7 @@ function animation(){
     var images=$('.images');
     var x=$('#x');
     $('#twok15').css({
-        'top':(browserHeight *.7)+'px',
+        'top':(browserHeight *.75)+'px',
         'left':(browserWidth *.3)+'px'
     });
     $('#click').css({
@@ -55,6 +55,7 @@ function responsiveImg(){
     $('body').css({
         'height':browserHeight+'px'
     });
+
     if(browserWidth<757){
         x.css({
             'right':"40px"
@@ -64,12 +65,15 @@ function responsiveImg(){
             'top':(browserHeight *.4)+'px',
             'left':(browserWidth *.15)+'px'
         });
-        $('#flag').animate({
-            'top':(browserHeight *.02)+'px'
-        },1500);
-        $('#slideshow').animate({
-            'top':(browserHeight *.5)+'px'
-        },1500);
+        setTimeout(function(){
+            $('#flag').animate({
+                'top':(browserHeight *.02)+'px'
+            },1500);
+            $('#slideshow').animate({
+                'top':(browserHeight *.5)+'px'
+            },1500);
+        },3000);
+
     }
     else{
         x.css({
@@ -80,16 +84,19 @@ function responsiveImg(){
             'top':(browserHeight *.1)+'px',
             'left':(browserWidth *.3)+'px'
         });
-        $('#flag').animate({
-            'top':(browserHeight *.15)+'px',
-            'left':(browserWidth *.59)+'px'
-        },1500, function(){
-            $('#twok15').fadeIn();
-            $('#click').fadeIn();
-        });
-        $('#slideshow').animate({
-            'top':(browserHeight *.03)+'px',
-            'left':(browserWidth *.02)+'px'
-        },1500);
+        setTimeout(function(){
+            $('#flag').animate({
+                'top':(browserHeight *.15)+'px',
+                'left':(browserWidth *.59)+'px'
+            },1500, function(){
+                $('#twok15').fadeIn();
+                $('#click').fadeIn();
+            });
+            $('#slideshow').animate({
+                'top':(browserHeight *.03)+'px',
+                'left':(browserWidth *.02)+'px'
+            },1500);
+        },3000);
+
     }
 }
