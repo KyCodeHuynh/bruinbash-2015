@@ -62,6 +62,12 @@
 .images{
     position: absolute;
     cursor: pointer;
+    display:none;
+}
+
+html, body{
+    margin:0;
+    height:100%;
 }
 
 body{

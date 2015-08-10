@@ -28,11 +28,6 @@ function animation(){
         'top':(browserHeight *.75)+'px',
         'left':(browserWidth *.3)+'px'
     });
-    $('#click').css({
-        'width':(browserWidth *.4)+'px',
-       'top':(browserHeight *.05)+'px',
-        'left':(browserWidth *.59)
-    });
     responsiveImg();
     images.on('click',function(){
         $('.intro').fadeOut();
@@ -52,11 +47,19 @@ function responsiveImg(){
     var browserHeight=$(window).height();
     var images=$('.images');
     var x=$('#x');
-    $('body').css({
-        'height':browserHeight+'px'
+    $('#twok15').css({
+        'display':"none"
     });
+    $('#click').css({
+         'display':'none'
+        });
 
     if(browserWidth<757){
+        $('#first-gif').css({
+            'width':(browserWidth *.7)+'px',
+            'top':(browserHeight *.4)+'px',
+            'left':(browserWidth *.15)+'px'
+        });
         x.css({
             'right':"40px"
         });
@@ -65,7 +68,16 @@ function responsiveImg(){
             'top':(browserHeight *.4)+'px',
             'left':(browserWidth *.15)+'px'
         });
+        $('#click').css({
+            'width':(browserWidth *.4)+'px',
+            'top':(browserHeight *.05)+'px',
+            'left':(browserWidth *.59)
+        });
         setTimeout(function(){
+            images.fadeIn(1);
+            setTimeout(function(){
+                $('#first-gif').fadeOut('fast');
+            },750);
             $('#flag').animate({
                 'top':(browserHeight *.02)+'px'
             },1500);
@@ -76,6 +88,11 @@ function responsiveImg(){
 
     }
     else{
+        $('#first-gif').css({
+            'width':(browserWidth *.4)+'px',
+            'top':(browserHeight *.1)+'px',
+            'left':(browserWidth *.3)+'px'
+        });
         x.css({
             'right':"40px"
         });
@@ -84,7 +101,19 @@ function responsiveImg(){
             'top':(browserHeight *.1)+'px',
             'left':(browserWidth *.3)+'px'
         });
+
+        $('#click').css({
+            'width':(browserWidth *.4)+'px',
+            'top':(browserHeight *.05)+'px',
+            'left':(browserWidth *.59),
+            'display':'none'
+        });
         setTimeout(function(){
+            images.fadeIn('medium');
+            $('#click').css({
+                'display':'none'
+            });
+            $('#first-gif').fadeOut('fast');
             $('#flag').animate({
                 'top':(browserHeight *.15)+'px',
                 'left':(browserWidth *.59)+'px'
