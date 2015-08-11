@@ -53,6 +53,7 @@ function responsiveImg(){
     $('#click').css({
          'display':'none'
         });
+    $('#first-gif').fadeIn();
 
     if(browserWidth<757){
         $('#first-gif').css({
@@ -74,17 +75,17 @@ function responsiveImg(){
             'left':(browserWidth *.59)
         });
         setTimeout(function(){
-            images.fadeIn(1);
+            images.fadeIn('fast');
             setTimeout(function(){
                 $('#first-gif').fadeOut('fast');
-            },750);
-            $('#flag').animate({
-                'top':(browserHeight *.02)+'px'
-            },1500);
-            $('#slideshow').animate({
-                'top':(browserHeight *.5)+'px'
-            },1500);
-        },3000);
+                $('#flag').animate({
+                    'top':(browserHeight *.02)+'px'
+                },1500);
+                $('#slideshow').animate({
+                    'top':(browserHeight *.5)+'px'
+                },1500);
+            },2000);
+        },1000);
 
     }
     else{
@@ -113,19 +114,22 @@ function responsiveImg(){
             $('#click').css({
                 'display':'none'
             });
-            $('#first-gif').fadeOut('fast');
-            $('#flag').animate({
-                'top':(browserHeight *.15)+'px',
-                'left':(browserWidth *.59)+'px'
-            },1500, function(){
-                $('#twok15').fadeIn();
-                $('#click').fadeIn();
-            });
-            $('#slideshow').animate({
-                'top':(browserHeight *.03)+'px',
-                'left':(browserWidth *.02)+'px'
-            },1500);
-        },3000);
+            setTimeout(function(){
+                $('#first-gif').fadeOut('fast');
+                $('#flag').animate({
+                    'top':(browserHeight *.15)+'px',
+                    'left':(browserWidth *.59)+'px'
+                },1500, function(){
+                    $('#twok15').fadeIn();
+                    $('#click').fadeIn();
+                });
+                $('#slideshow').animate({
+                    'top':(browserHeight *.03)+'px',
+                    'left':(browserWidth *.02)+'px'
+                },1500);
+            },2000);
+
+        },1000);
 
     }
 }

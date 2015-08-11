@@ -88,6 +88,14 @@ body{
     display:none;
 }
 
+#first-gif{
+    position:absolute;
+    z-index:1;
+}
+#slideshow,#flag{
+    z-index:0;
+}
+
 .clock{
     display:block;
     margin: 0 auto;
@@ -150,5 +158,6 @@ body{
     margin-left:auto;
 }
 
-
-
+.logos{
+    margin:1%;
+}
