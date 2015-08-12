@@ -171,10 +171,6 @@ body{
     text-align: center !important;
 }
 
-.main{
-    display:none;
-}
-
 #logo{
     cursor: pointer;
     display:block;

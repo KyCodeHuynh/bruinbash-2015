@@ -32,7 +32,11 @@ function animation(){
     images.on('click',function(){
         $('.intro').fadeOut();
         setTimeout(function(){
-            $('.main').fadeIn(1000);
+            $.ajax('countdown.html', {
+                success: function (response) {
+                    $('.main').html(response);
+                }
+            });
         },1000);
     });
     x.on('click',function(){
