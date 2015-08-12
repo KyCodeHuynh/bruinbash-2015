@@ -39,6 +39,16 @@ function animation(){
             $.ajax('countdown.html', {
                 success: function (response) {
                     $('.main').html(response);
+                },
+                error: function(request, errorType, errorMessage) {
+                    alert('Error: ' + errorType + ' with message: ' + errorMessage);
+                },
+                timeout: 4000,
+                beforeSend: function() {
+                    $('.main').html();
+                },
+                complete: function() {
+
                 }
             });
         },1000);
