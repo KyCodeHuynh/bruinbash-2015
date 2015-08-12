@@ -45,7 +45,7 @@ function animation(){
                 },
                 timeout: 4000,
                 beforeSend: function() {
-                    $('.main').html();
+                    $('.main').addClass('isloading');
                 },
                 complete: function() {
 
