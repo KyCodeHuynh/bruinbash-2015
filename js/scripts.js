@@ -15,6 +15,7 @@ jQuery(document).ready(function(){
     clockFace: 'DailyCounter',
     countdown: true}
     );
+
     animation();
 
 });
@@ -28,6 +29,9 @@ function animation(){
         'top':(browserHeight *.75)+'px',
         'left':(browserWidth *.3)+'px'
     });
+    /*$('#cac').css({
+        'left':(browserWidth *.73)+'px'
+    });*/
     responsiveImg();
     images.on('click',function(){
         $('.intro').fadeOut();
