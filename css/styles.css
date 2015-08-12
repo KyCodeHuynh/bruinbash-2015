@@ -18,7 +18,7 @@
 
     }
     #date{
-        font-size: 90px;
+        font-size: 80px;
     }
 
     .logoPlacement{
@@ -102,6 +102,8 @@ body{
     position:absolute;
     font-size:40px;
     cursor:pointer;
+    display:block;
+    margin-bottom:10px;
 }
 
 #twok15{
@@ -154,13 +156,19 @@ body{
 #social-media {
     height: 100px;
     width: 100%;
-    padding: 2%;
+    padding: 3%;
     margin-top:1%;
     margin-left:2%;
 }
 
 .icon{
-    width:35px;
+    position:relative;
+    width:50px;
+}
+
+.cac{
+    width:50px;
+    float:right;
 }
 
 #date{
