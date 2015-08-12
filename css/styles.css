@@ -13,12 +13,19 @@
 /* Large desktop */
 @media (min-width: 1200px) {
     .clock{
-        zoom: 1.45;
-        -moz-transform: scale(1.45);
+        zoom: 1.20;
+        -moz-transform: scale(1.20);
 
     }
     #date{
-        font-size: 110px;
+        font-size: 90px;
+    }
+
+    .logoPlacement{
+        margin-left:37%
+    }
+    .logoPlacement2{
+        margin-left:33%
     }
 }
 
@@ -29,7 +36,13 @@
         -moz-transform: scale(.8);
     }
     #date{
-        font-size:80px;
+        font-size:70px;
+    }
+    .logoPlacement{
+        margin-left:30%
+    }
+    .logoPlacement2{
+        margin-left:25%
     }
 }
 
@@ -41,6 +54,12 @@
     }
     #date {
         font-size: 40px;
+    }
+    .logoPlacement{
+        margin-left:10%
+    }
+    .logoPlacement2{
+        margin-left:10%
     }
 }
 
@@ -56,7 +75,9 @@
     #tag-line {
         font-size: 25px;
     }
-
+    .logoPlacement{
+        margin-left:10%
+    }
 }
 
 .images{
@@ -136,6 +157,10 @@ body{
     padding: 2%;
     margin-top:1%;
     margin-left:2%;
+}
+
+.icon{
+    width:35px;
 }
 
 #date{

@@ -76,6 +76,9 @@ function responsiveImg(){
         });
         setTimeout(function(){
             images.fadeIn('fast');
+            $('#click').css({
+                'display':'none'
+            });
             setTimeout(function(){
                 $('#first-gif').fadeOut('fast');
                 $('#flag').animate({
@@ -83,7 +86,9 @@ function responsiveImg(){
                 },1500);
                 $('#slideshow').animate({
                     'top':(browserHeight *.5)+'px'
-                },1500);
+                },1500, function(){
+                    $('#click').fadeIn();
+                });
             },2000);
         },1000);
 
