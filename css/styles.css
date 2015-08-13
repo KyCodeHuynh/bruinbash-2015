@@ -13,12 +13,12 @@
 /* Large desktop */
 @media (min-width: 1200px) {
     .clock{
-        zoom: 1.2;
+        zoom: 1.35;
         -moz-transform: scale(1.35);
 
     }
     #date{
-        font-size: 75px;
+        font-size: 60px;
     }
 
     .logoPlacement{
