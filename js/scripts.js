@@ -24,7 +24,7 @@ function animation(){
     var browserWidth=$(window).width();
     var browserHeight=$(window).height();
     var images=$('.images');
-    var x=$('#x');
+    var x=$('#bbash');
     $('#twok15').css({
         'top':(browserHeight *.75)+'px',
         'left':(browserWidth *.3)+'px'
