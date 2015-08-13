@@ -57,6 +57,10 @@ function responsiveImg(){
         'z-index':'10'
         });
     $('#first-gif').fadeIn();
+    $('#bbash').css({
+        'left':(browserWidth*.44) +'px',
+        'width':(browserWidth*.1)+'px'
+    });
 
     if(browserWidth<757){
         $('#first-gif').css({
