@@ -15,7 +15,6 @@
     .clock{
         zoom: 1.35;
         -moz-transform: scale(1.35);
-
     }
     #date{
         font-size: 60px;
@@ -29,6 +28,14 @@
     }
     .icon,.cac{
         width:2.5em;
+    }
+
+    .logos{
+        width:8em;
+    }
+
+    .logos1{
+        width:6em;
     }
 }
 
@@ -201,13 +208,6 @@ body{
     margin-left:auto;
 }
 
-.logos{
-    width:8em;
-}
-
-.logos1{
-    width:6em;
-}
 
 #bbash{
     position:absolute;
