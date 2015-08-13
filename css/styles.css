@@ -13,19 +13,22 @@
 /* Large desktop */
 @media (min-width: 1200px) {
     .clock{
-        zoom: 1.20;
-        -moz-transform: scale(1.20);
+        zoom: 1.2;
+        -moz-transform: scale(1.35);
 
     }
     #date{
-        font-size: 70px;
+        font-size: 75px;
     }
 
     .logoPlacement{
         margin-left:37%
     }
     .logoPlacement2{
-        margin-left:33%
+        margin-left:27%
+    }
+    .icon,.cac{
+        width:2em;
     }
 }
 
@@ -44,6 +47,9 @@
     .logoPlacement2{
         margin-left:25%
     }
+    .icon,.cac{
+        width:2em;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -56,10 +62,13 @@
         font-size: 40px;
     }
     .logoPlacement{
-        margin-left:10%
+        margin-left:18%
     }
     .logoPlacement2{
         margin-left:10%
+    }
+    .icon,.cac{
+        width:2em;
     }
 }
 
@@ -76,7 +85,10 @@
         font-size: 25px;
     }
     .logoPlacement{
-        margin-left:10%
+        margin-left:17%
+    }
+    .icon,.cac{
+        width:2em;
     }
 }
 
@@ -163,11 +175,9 @@ body{
 
 .icon{
     position:relative;
-    width:50px;
 }
 
 .cac{
-    width:50px;
     float:right;
 }
 

@@ -29,9 +29,6 @@ function animation(){
         'top':(browserHeight *.75)+'px',
         'left':(browserWidth *.3)+'px'
     });
-    /*$('#cac').css({
-        'left':(browserWidth *.73)+'px'
-    });*/
     responsiveImg();
     images.on('click',function(){
         $('.intro').fadeOut();
@@ -54,8 +51,10 @@ function responsiveImg(){
     $('#twok15').css({
         'display':"none"
     });
-    $('#click').css({
-         'display':'none'
+    $('#tap').css({
+         display:'none',
+        width:'100%',
+        'z-index':'10'
         });
     $('#first-gif').fadeIn();
 
@@ -73,10 +72,9 @@ function responsiveImg(){
             'top':(browserHeight *.4)+'px',
             'left':(browserWidth *.15)+'px'
         });
-        $('#click').css({
-            'width':(browserWidth *.4)+'px',
-            'top':(browserHeight *.05)+'px',
-            'left':(browserWidth *.59)
+        $('#tap').css({
+            'top':(browserHeight *.4)+'px',
+            'left':(browserWidth *.25)
         });
         setTimeout(function(){
             images.fadeIn('fast');
@@ -91,7 +89,7 @@ function responsiveImg(){
                 $('#slideshow').animate({
                     'top':(browserHeight *.5)+'px'
                 },1500, function(){
-                    $('#click').fadeIn();
+                    $('#tap').fadeIn();
                 });
             },2000);
         },1000);

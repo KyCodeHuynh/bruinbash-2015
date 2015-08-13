@@ -12,53 +12,60 @@
 <body style="overflow:hidden">
 
 <div class="intro">
-    <div class="visible-xs" style="height:200px"></div>
+    <div style="display:none; position:absolute" id="tap">
+        <h1 class="visible-xs" >Tap to Enter</h1>
+    </div>
     <img src="images/Intro-Gif.gif" alt="Intro" id="first-gif"/>
     <img class="images" id="slideshow" src="images/slideshow.gif" alt="slideshow"/>
     <img class="images" id="flag" src="images/flag-trans.gif" alt="flag"/>
     <img src="images/2015.png" id="twok15" alt="2015">
-    <img src="images/click.png" alt="click to enter" class="images" style="display: none; position:absolute;" id="click"/>
+    <img src="images/click.png" alt="click to enter" class="images hidden-xs" style="display: none; position:absolute;" id="click"/>
 </div>
 <div class="main">
-    <div id="x" class="glyphicon glyphicon-share-alt"></div>
-    <div id="social-media">
-        <a href="https://uclacec.com" target="_blank"><img class="icon" src="images/cec.png"></a>
-        <a href="https://facebook.com/uclacec" target="_blank"><img class='icon' src="images/facebook.png"/></a>
-        <a href="https://twitter.com/uclacec" target="_blank"><img class='icon' src="images/twitter.png"/></a>
-        <a href="https://instagram.com/uclacec/"><img class='icon' src="images/Instagram.png"/></a>
-        <a href="http://www.culturalaffairsla.com/" target="_blank"><img class="cac" src="images/CAC-LOGO.png" style="margin-right:20px;"/></a>
-        <a href="https://facebook.com/uclacec" target="_blank"><img class='cac' src="images/facebook.png"/></a>
-        <a href="https://twitter.com/uclacec" target="_blank"><img class='cac' src="images/twitter.png"/></a>
-        <a href="https://instagram.com/uclacec/"><img class='cac' src="images/Instagram.png"/></a>
+    <div class="row"><div id="x" class="glyphicon glyphicon-share-alt" style="display:block;"></div></div>
+    <div class="visible-xs" style="height:20px;width:100%;"></div>
+    <div class="row">
+        <div id="social-media">
+            <a href="https://uclacec.com" target="_blank"><img class="icon" src="images/cec.png"></a>
+            <a href="https://facebook.com/uclacec" target="_blank"><img class='icon' src="images/facebook.png"/></a>
+            <a href="https://twitter.com/uclacec" target="_blank"><img class='icon' src="images/twitter.png"/></a>
+            <a href="https://instagram.com/uclacec/"><img class='icon' src="images/Instagram.png"/></a>
+            <a href="http://www.culturalaffairsla.com/" target="_blank"><img class="cac" src="images/CAC-LOGO.png" style="margin-right:20px;"/></a>
+            <a href="https://facebook.com/culturalaffairsla" target="_blank"><img class='cac' src="images/facebook.png"/></a>
+            <a href="https://twitter.com/culturalaffairs" target="_blank"><img class='cac' src="images/twitter.png"/></a>
+            <a href="https://instagram.com/culturalaffairs"><img class='cac' src="images/Instagram.png"/></a>
+        </div>
     </div>
+
     <div class="large-buffer"></div>
     <div class="sm-buffer"></div>
     <div class="container"><div class="clock"></div></div>
     <h2 id="date">SEPTEMBER 21ST, 2015</h2>
     <h3 id="tag-line"> we're bash, bitches.</h3>
-    <div class="col-md-4 logoPlacement">
+    <h4 style="text-align:center">CEC & CAC presents Bruin Bash 2015 powered by Nissan</h4>
+    <div class="row logoPlacement">
         <a href="https://uclacec.com" target="_blank">
-            <img src="images/cec.png" alt="cec. bash us harder." style="width:80px" class="logos">
+            <img src="images/cec.png" alt="cec. bash us harder."  class="logos col-md-1 col-xs-2">
         </a>
         <a href="http://www.nissanusa.com/college-grad?next=footer.college_grad.link" target="_blank">
-            <img src="images/College%20Grad%20Logo_Black.png" alt="Nissan" style="width:150px" class="logos">
+            <img src="images/College%20Grad%20Logo_Black.png" alt="Nissan"  class="logos col-md-2 col-xs-4">
         </a>
         <a href="http://www.culturalaffairsla.com/" target="_blank">
-            <img src="images/CAC-LOGO.png" alt="CAC" style="width:100px;" class='logos'>
+            <img src="images/CAC-LOGO.png" alt="CAC" class='logos col-md-1 col-xs-2'>
         </a>
     </div>
-    <div class="col-md-8 logoPlacement2">
+    <div class="row logoPlacement2">
         <a href="http://www.recreation.ucla.edu/" target="_blank">
-            <img src="images/uclarec.png" alt="UCLA Recreation" style="width:150px" class="logos">
+            <img src="images/uclarec.png" alt="UCLA Recreation" style="margin-top:3%" class="logos col-md-2 col-xs-3">
         </a>
         <a href="http://www.got2b.us/got2b/us/en/home.html" target="_blank">
-            <img src="images/Got-2-B%20logo.png" alt="Got 2 B" style="width:40px" class="logos">
+            <img src="images/Got-2-B.png" alt="Got 2 B" class="logos col-md-2 col-xs-2" style="margin-top:2%">
         </a>
         <a href="http://us.coca-cola.com/home/" target="_blank">
-            <img src="images/14474RF%20Coke%20Zero.jpg" alt="Coke" style="width:80px" class="logos">
+            <img src="images/14474RF%20Coke%20Zero.jpg" alt="Coke" style="margin-top:2%" class="logos col-md-1 col-xs-2">
         </a>
         <a href="http://us.coca-cola.com/home/" target="_blank">
-            <img src="images/Coke.png" alt="Coke" style="width:50px" class="logos">
+            <img src="images/Coke.png" alt="Coke" style="margin-top:1%"  class="logos col-md-1 col-xs-2">
         </a>
 
     </div>
