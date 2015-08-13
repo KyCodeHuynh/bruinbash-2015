@@ -57,12 +57,13 @@ function responsiveImg(){
         'z-index':'10'
         });
     $('#first-gif').fadeIn();
-    $('#bbash').css({
-        'left':(browserWidth*.44) +'px',
-        'width':(browserWidth*.1)+'px'
-    });
+
 
     if(browserWidth<757){
+        $('#bbash').css({
+            'left':(browserWidth*.37) +'px',
+            'width':(browserWidth*.3)+'px'
+        });
         $('#first-gif').css({
             'width':(browserWidth *.7)+'px',
             'top':(browserHeight *.4)+'px',
@@ -100,6 +101,10 @@ function responsiveImg(){
 
     }
     else{
+        $('#bbash').css({
+            'left':(browserWidth*.44) +'px',
+            'width':(browserWidth*.1)+'px'
+        });
         $('#first-gif').css({
             'width':(browserWidth *.4)+'px',
             'top':(browserHeight *.1)+'px',
