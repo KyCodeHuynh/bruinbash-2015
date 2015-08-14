@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4f5693c9-140c-404b-8d7b-a7a10b494317" name="Default" comment="finished splash page and fixed bugs">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
+    <list default="true" id="4f5693c9-140c-404b-8d7b-a7a10b494317" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/whitelogo.gif" />
+      <change type="DELETED" beforePath="C:\Users\Daniel\WebstormProjects\bruinbash-2015\images\white-logo.gif" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bbash2015.iws" />
@@ -29,8 +28,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.38037866">
-              <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.7900172">
+              <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -374,7 +373,13 @@
       <option name="project" value="LOCAL" />
       <updated>1439578740559</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="finished splash page and fixed bugs +mobile is done">
+      <created>1439579875069</created>
+      <option name="number" value="00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1439579875069</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -434,7 +439,8 @@
     <MESSAGE value="changed splash page" />
     <MESSAGE value="fixed mobile splash page" />
     <MESSAGE value="finished splash page" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished splash page" />
+    <MESSAGE value="finished splash page and fixed bugs +mobile is done" />
+    <option name="LAST_COMMIT_MESSAGE" value="finished splash page and fixed bugs +mobile is done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -929,8 +935,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.38037866">
-          <caret line="22" column="6" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.7900172">
+          <caret line="36" column="14" selection-start-line="36" selection-start-column="14" selection-end-line="36" selection-end-column="14" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
