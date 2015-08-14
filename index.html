@@ -12,14 +12,42 @@
 <body style="overflow:hidden">
 
 <div class="intro">
-    <div class="visible-xs" style="height:200px"></div>
-    <img src="images/Intro-Gif.gif" alt="Intro" id="first-gif"/>
-    <img class="images" id="slideshow" src="images/slideshow.gif" alt="slideshow"/>
-    <img class="images" id="flag" src="images/flag-trans.gif" alt="flag"/>
+    <div style="display:none; position:absolute" id="tap">
+        <h1 class="visible-xs" >Tap to Enter</h1>
+    </div>
+    <img class="images clickable" id="slideshow" src="images/bruin-bash-slideshow.gif" alt="slideshow"/>
+    <img src="images/white-logo.gif" alt="Intro" class="images clickable" id="white-flag"/>
+    <img id="black-flag" class='clickable' src="images/flag-trans.gif" alt="flag" style="display:none; position:absolute"/>
     <img src="images/2015.png" id="twok15" alt="2015">
-    <img src="images/click.png" alt="click to enter" class="images" style="display: none; position:absolute;" id="click"/>
+    <img src="images/click.png" alt="click to enter" class="hidden-xs clickable" style="display: none; position:absolute;" id="click"/>
 </div>
-<div class="main isloading">
+
+<div class="main">
+    <img src="images/bbash.png" id="bbash" style="cursor:pointer">
+    <div class="visible-xs" style="height:20px;width:100%;"></div>
+    <div class="row">
+        <div id="social-media">
+            <a href="https://uclacec.com" target="_blank"><img class="icon" src="images/cec.png" style="margin-left:20px;"></a>
+            <a href="https://facebook.com/uclacec" target="_blank"><img class='icon' src="images/facebook.png"/></a>
+            <a href="https://twitter.com/uclacec" target="_blank"><img class='icon' src="images/twitter.png"/></a>
+            <a href="https://instagram.com/uclacec/"><img class='icon' src="images/Instagram.png"/></a>
+            <a href="http://www.culturalaffairsla.com/" target="_blank"><img class="cac" src="images/CAC-LOGO.png" style="margin-right:20px;"/></a>
+            <a href="https://facebook.com/culturalaffairsla" target="_blank"><img class='cac' src="images/facebook.png"/></a>
+            <a href="https://twitter.com/culturalaffairs" target="_blank"><img class='cac' src="images/twitter.png"/></a>
+            <a href="https://instagram.com/culturalaffairs"><img class='cac' src="images/Instagram.png"/></a>
+        </div>
+    </div>
+
+    <div class="large-buffer"></div>
+    <div class="sm-buffer"></div>
+    <div class="container"><div class="clock"></div></div>
+    <h2 id="date">SEPTEMBER 21ST, 2015</h2>
+    <h3 id="tag-line"> we're bash, bitches.</h3>
+    <h4 style="text-align:center">CEC & CAC present Bruin Bash 2015</h4>
+    <div class="row logoPlacement hidden-xs"></div>
+    <div class="mobileLogo"></div>
+    <h4 style="text-align:center">powered by Nissan</h4>
+    <div class="large-buffer"></div>
 </div>
 
 

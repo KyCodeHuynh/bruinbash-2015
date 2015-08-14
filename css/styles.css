@@ -13,19 +13,32 @@
 /* Large desktop */
 @media (min-width: 1200px) {
     .clock{
-        zoom: 1.20;
-        -moz-transform: scale(1.20);
-
+        zoom: 1.35;
+        -moz-transform: scale(1.35);
     }
     #date{
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .logoPlacement{
-        margin-left:37%
+        margin-left:8%
     }
-    .logoPlacement2{
-        margin-left:33%
+    .icon,.cac{
+        width:2.5em;
+    }
+
+    .logos{
+        width:9em;
+    }
+
+    .logos1{
+        width:6em;
+    }
+    #nissan{
+        width:13em;
+    }
+    #uclarec{
+        width:12em;
     }
 }
 
@@ -44,6 +57,9 @@
     .logoPlacement2{
         margin-left:25%
     }
+    .icon,.cac{
+        width:2em;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -56,10 +72,13 @@
         font-size: 40px;
     }
     .logoPlacement{
-        margin-left:10%
+        margin-left:18%
     }
     .logoPlacement2{
-        margin-left:10%
+        margin-left:19%
+    }
+    .icon,.cac{
+        width:2em;
     }
 }
 
@@ -76,7 +95,10 @@
         font-size: 25px;
     }
     .logoPlacement{
-        margin-left:10%
+        margin-left:14%
+    }
+    .icon,.cac{
+        width:2em;
     }
 }
 
@@ -84,6 +106,10 @@
     position: absolute;
     cursor: pointer;
     display:none;
+}
+
+.clickable{
+    cursor:pointer;
 }
 
 html, body{
@@ -115,7 +141,7 @@ body{
     position:absolute;
     z-index:1;
 }
-#slideshow,#flag{
+#slideshow,#white-flag{
     z-index:0;
 }
 
@@ -133,6 +159,11 @@ body{
 
 .large-buffer{
     height:58px;
+    width:100%;
+}
+
+.md-buffer{
+    height:30px;
     width:100%;
 }
 
@@ -158,16 +189,14 @@ body{
     width: 100%;
     padding: 3%;
     margin-top:1%;
-    margin-left:2%;
+    box-sizing:border-box;
 }
 
 .icon{
     position:relative;
-    width:50px;
 }
 
 .cac{
-    width:50px;
     float:right;
 }
 
@@ -191,6 +220,9 @@ body{
     margin:1%;
 }
 
-.isloading{
-    
+
+#bbash{
+    position:absolute;
+    z-index:12;
+
 }

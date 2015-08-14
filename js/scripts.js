@@ -24,16 +24,13 @@ function animation(){
     var browserWidth=$(window).width();
     var browserHeight=$(window).height();
     var images=$('.images');
-    var x=$('#x');
+    var x=$('#bbash');
+    responsiveImg();
     $('#twok15').css({
         'top':(browserHeight *.75)+'px',
         'left':(browserWidth *.3)+'px'
     });
-    /*$('#cac').css({
-        'left':(browserWidth *.73)+'px'
-    });*/
-    responsiveImg();
-    images.on('click',function(){
+    $('.clickable').on('click',function(){
         $('.intro').fadeOut();
         setTimeout(function(){
             $.ajax('countdown.html', {
@@ -68,91 +65,105 @@ function responsiveImg(){
     $('#twok15').css({
         'display':"none"
     });
-    $('#click').css({
-         'display':'none'
+    $('#black-flag').css({
+        display:'none'
+    });
+    $('#tap').css({
+         display:'none',
+        width:'100%',
+        'z-index':'10'
         });
-    $('#first-gif').fadeIn();
 
     if(browserWidth<757){
-        $('#first-gif').css({
-            'width':(browserWidth *.7)+'px',
-            'top':(browserHeight *.4)+'px',
-            'left':(browserWidth *.15)+'px'
+        $.ajax('mobilelogos',{
+           success: function(response){
+               $('.mobileLogo').html(response);
+           }
+        });
+        $('#bbash').css({
+            'left':(browserWidth*.37) +'px',
+            'width':(browserWidth*.3)+'px'
         });
         x.css({
             'right':"40px"
         });
+        $('#tap').css({
+            'top':(browserHeight *.4)+'px',
+            'left':(browserWidth *.25)
+        });
+
         images.css({
             'width':(browserWidth *.7)+'px',
-            'top':(browserHeight *.4)+'px',
+            'top':(browserHeight *.3)+'px',
             'left':(browserWidth *.15)+'px'
         });
+        $('#black-flag').css({
+            'width':(browserWidth *.7)+'px',
+            'left':(browserWidth *.15)+'px',
+            'top':(browserHeight *.02)+'px'
+        });
         $('#click').css({
-            'width':(browserWidth *.4)+'px',
-            'top':(browserHeight *.05)+'px',
-            'left':(browserWidth *.59)
-        });
-        setTimeout(function(){
-            images.fadeIn('fast');
-            $('#click').css({
-                'display':'none'
-            });
-            setTimeout(function(){
-                $('#first-gif').fadeOut('fast');
-                $('#flag').animate({
-                    'top':(browserHeight *.02)+'px'
-                },1500);
-                $('#slideshow').animate({
-                    'top':(browserHeight *.5)+'px'
-                },1500, function(){
-                    $('#click').fadeIn();
-                });
-            },2000);
-        },1000);
-
-    }
-    else{
-        $('#first-gif').css({
-            'width':(browserWidth *.4)+'px',
-            'top':(browserHeight *.1)+'px',
-            'left':(browserWidth *.3)+'px'
-        });
-        x.css({
-            'right':"40px"
-        });
-        images.css({
-            'width':(browserWidth *.4)+'px',
-            'top':(browserHeight *.1)+'px',
-            'left':(browserWidth *.3)+'px'
-        });
-
-        $('#click').css({
-            'width':(browserWidth *.4)+'px',
-            'top':(browserHeight *.05)+'px',
-            'left':(browserWidth *.59),
             'display':'none'
         });
+        $('.images').delay(500).fadeIn();
         setTimeout(function(){
-            images.fadeIn('medium');
-            $('#click').css({
-                'display':'none'
+            $('#white-flag').animate({
+                'top':(browserHeight *.02)+'px'
+            },1500, function(){
+                $('#black-flag').fadeIn();
+                $('#white-flag').fadeOut();
             });
-            setTimeout(function(){
-                $('#first-gif').fadeOut('fast');
-                $('#flag').animate({
-                    'top':(browserHeight *.15)+'px',
-                    'left':(browserWidth *.59)+'px'
-                },1500, function(){
-                    $('#twok15').fadeIn();
-                    $('#click').fadeIn();
-                });
-                $('#slideshow').animate({
-                    'top':(browserHeight *.03)+'px',
-                    'left':(browserWidth *.02)+'px'
-                },1500);
-            },2000);
-
-        },1000);
-
+            $('#slideshow').animate({
+                'top':(browserHeight *.5)+'px'
+            },1500, function(){
+                $('#tap').fadeIn();
+            });
+        },3000);
+    }
+    else{
+        $.ajax('logos.html',{
+            success: function(response){
+                $('.logoPlacement').html(response);
+            }
+        });
+        $('#bbash').css({
+            'left':(browserWidth*.44) +'px',
+            'width':(browserWidth*.1)+'px'
+        });
+        x.css({
+            'right':"40px"
+        });
+        images.css({
+            'width':(browserWidth *.4)+'px',
+            'top':(browserHeight *.1)+'px',
+            'left':(browserWidth *.33)+'px',
+        });
+        $('#black-flag').css({
+            'width':(browserWidth *.4)+'px',
+            'top':(browserHeight *.15)+'px',
+            'left':(browserWidth *.58)+'px'
+        });
+        $('#click').css({
+            'width':(browserWidth *.4)+'px',
+            'top':(browserHeight *.05)+'px',
+            'left':(browserWidth *.58),
+            'display':'none'
+        });
+        $('.images').delay(500).fadeIn();
+        setTimeout(function(){
+            $('#white-flag').animate({
+                'top':(browserHeight *.15)+'px',
+                'left':(browserWidth *.58)+'px'
+            },1500, function(){
+                $('#twok15').fadeIn();
+                $('#click').fadeIn();
+                $('#black-flag').fadeIn();
+                $('#white-flag').fadeOut();
+            });
+            $('#slideshow').animate({
+                'top':(browserHeight *.03)+'px',
+                'left':(browserWidth *.02)+'px'
+            },1500);
+        },2000);
     }
 }
