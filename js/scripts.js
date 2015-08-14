@@ -25,11 +25,11 @@ function animation(){
     var browserHeight=$(window).height();
     var images=$('.images');
     var x=$('#bbash');
+    responsiveImg();
     $('#twok15').css({
         'top':(browserHeight *.75)+'px',
         'left':(browserWidth *.3)+'px'
     });
-    responsiveImg();
     images.on('click',function(){
         $('.intro').fadeOut();
         setTimeout(function(){
@@ -56,96 +56,89 @@ function responsiveImg(){
         width:'100%',
         'z-index':'10'
         });
-    $('#first-gif').fadeIn();
-
 
     if(browserWidth<757){
+        $.ajax('mobilelogos',{
+           success: function(response){
+               $('.mobileLogo').html(response);
+           }
+        });
         $('#bbash').css({
             'left':(browserWidth*.37) +'px',
             'width':(browserWidth*.3)+'px'
         });
-        $('#first-gif').css({
-            'width':(browserWidth *.7)+'px',
-            'top':(browserHeight *.4)+'px',
-            'left':(browserWidth *.15)+'px'
-        });
         x.css({
             'right':"40px"
-        });
-        images.css({
-            'width':(browserWidth *.7)+'px',
-            'top':(browserHeight *.4)+'px',
-            'left':(browserWidth *.15)+'px'
         });
         $('#tap').css({
             'top':(browserHeight *.4)+'px',
             'left':(browserWidth *.25)
         });
-        setTimeout(function(){
-            images.fadeIn('fast');
-            $('#click').css({
-                'display':'none'
-            });
-            setTimeout(function(){
-                $('#first-gif').fadeOut('fast');
-                $('#flag').animate({
-                    'top':(browserHeight *.02)+'px'
-                },1500);
-                $('#slideshow').animate({
-                    'top':(browserHeight *.5)+'px'
-                },1500, function(){
-                    $('#tap').fadeIn();
-                });
-            },2000);
-        },1000);
 
+        images.css({
+            'width':(browserWidth *.7)+'px',
+            'top':(browserHeight *.4)+'px',
+            'left':(browserWidth *.15)+'px'
+        });
+        $('#click').css({
+            'display':'none'
+        });
+        setTimeout(function(){
+            $('#flag').animate({
+                'top':(browserHeight *.02)+'px'
+            },1500);
+            $('#slideshow').animate({
+                'top':(browserHeight *.5)+'px'
+            },1500, function(){
+                $('#tap').fadeIn();
+            });
+        },3000);
     }
     else{
+        $.ajax('logos.html',{
+            success: function(response){
+                $('.logoPlacement').html(response);
+            }
+        });
         $('#bbash').css({
             'left':(browserWidth*.44) +'px',
             'width':(browserWidth*.1)+'px'
         });
-        $('#first-gif').css({
-            'width':(browserWidth *.4)+'px',
-            'top':(browserHeight *.1)+'px',
-            'left':(browserWidth *.3)+'px'
-        });
         x.css({
             'right':"40px"
         });
-        images.css({
-            'width':(browserWidth *.4)+'px',
-            'top':(browserHeight *.1)+'px',
-            'left':(browserWidth *.3)+'px'
-        });
-
         $('#click').css({
             'width':(browserWidth *.4)+'px',
-            'top':(browserHeight *.05)+'px',
+            'top':(browserHeight *.85)+'px',
             'left':(browserWidth *.59),
             'display':'none'
         });
+        images.css({
+            'width':(browserWidth *.3)+'px',
+            'top':(browserHeight *.15)+'px',
+            'left':(browserWidth *.35)+'px'
+        });
+        $('#black-flag').css({
+            'top':(browserHeight *.20)+'px',
+            'left':(browserWidth *.68)+'px'
+        });
+        $('#click').css({
+            'display':'none'
+        });
         setTimeout(function(){
-            images.fadeIn('medium');
-            $('#click').css({
-                'display':'none'
+            $('#white-flag').animate({
+                'top':(browserHeight *.20)+'px',
+                'left':(browserWidth *.68)+'px'
+            },1500, function(){
+                $('#twok15').fadeIn();
+                $('#click').fadeIn();
+                $('#black-flag').fadeIn();
+                $('#white-flag').fadeOut();
             });
-            setTimeout(function(){
-                $('#first-gif').fadeOut('fast');
-                $('#flag').animate({
-                    'top':(browserHeight *.15)+'px',
-                    'left':(browserWidth *.59)+'px'
-                },1500, function(){
-                    $('#twok15').fadeIn();
-                    $('#click').fadeIn();
-                });
-                $('#slideshow').animate({
-                    'top':(browserHeight *.03)+'px',
-                    'left':(browserWidth *.02)+'px'
-                },1500);
-            },2000);
-
-        },1000);
-
+            $('#slideshow').animate({
+                'top':(browserHeight *.03)+'px',
+                'left':(browserWidth *.02)+'px'
+            },1500);
+        },2000);
     }
 }

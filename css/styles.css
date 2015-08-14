@@ -21,24 +21,21 @@
     }
 
     .logoPlacement{
-        margin-left:35%
-    }
-    .logoPlacement2{
-        margin-left:34%
+        margin-left:8%
     }
     .icon,.cac{
         width:2.5em;
     }
 
     .logos{
-        width:8em;
+        width:9em;
     }
 
     .logos1{
         width:6em;
     }
     #nissan{
-        width:12em;
+        width:13em;
     }
     #uclarec{
         width:12em;
@@ -108,7 +105,6 @@
 .images{
     position: absolute;
     cursor: pointer;
-    display:none;
 }
 
 html, body{
@@ -140,7 +136,7 @@ body{
     position:absolute;
     z-index:1;
 }
-#slideshow,#flag{
+#slideshow,#white-flag{
     z-index:0;
 }
 
@@ -158,6 +154,11 @@ body{
 
 .large-buffer{
     height:58px;
+    width:100%;
+}
+
+.md-buffer{
+    height:30px;
     width:100%;
 }
 
