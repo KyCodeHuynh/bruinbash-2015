@@ -30,7 +30,7 @@ function animation(){
         'top':(browserHeight *.75)+'px',
         'left':(browserWidth *.3)+'px'
     });
-    images.on('click',function(){
+    $('.clickable').on('click',function(){
         $('.intro').fadeOut();
         setTimeout(function(){
             $('.main').fadeIn(1000);
@@ -50,6 +50,9 @@ function responsiveImg(){
     var x=$('#x');
     $('#twok15').css({
         'display':"none"
+    });
+    $('#black-flag').css({
+        display:'none'
     });
     $('#tap').css({
          display:'none',
@@ -77,15 +80,18 @@ function responsiveImg(){
 
         images.css({
             'width':(browserWidth *.7)+'px',
-            'top':(browserHeight *.4)+'px',
+            'top':(browserHeight *.3)+'px',
             'left':(browserWidth *.15)+'px'
         });
         $('#black-flag').css({
+            'width':(browserWidth *.7)+'px',
+            'left':(browserWidth *.15)+'px',
             'top':(browserHeight *.02)+'px'
         });
         $('#click').css({
             'display':'none'
         });
+        $('.images').delay(500).fadeIn();
         setTimeout(function(){
             $('#white-flag').animate({
                 'top':(browserHeight *.02)+'px'
@@ -116,9 +122,10 @@ function responsiveImg(){
         images.css({
             'width':(browserWidth *.4)+'px',
             'top':(browserHeight *.1)+'px',
-            'left':(browserWidth *.33)+'px'
+            'left':(browserWidth *.33)+'px',
         });
         $('#black-flag').css({
+            'width':(browserWidth *.4)+'px',
             'top':(browserHeight *.15)+'px',
             'left':(browserWidth *.58)+'px'
         });
@@ -128,7 +135,7 @@ function responsiveImg(){
             'left':(browserWidth *.58),
             'display':'none'
         });
-
+        $('.images').delay(500).fadeIn();
         setTimeout(function(){
             $('#white-flag').animate({
                 'top':(browserHeight *.15)+'px',

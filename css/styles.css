@@ -105,6 +105,11 @@
 .images{
     position: absolute;
     cursor: pointer;
+    display:none;
+}
+
+.clickable{
+    cursor:pointer;
 }
 
 html, body{
