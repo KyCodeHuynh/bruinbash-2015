@@ -113,28 +113,26 @@ function responsiveImg(){
         x.css({
             'right':"40px"
         });
-        $('#click').css({
-            'width':(browserWidth *.4)+'px',
-            'top':(browserHeight *.85)+'px',
-            'left':(browserWidth *.59),
-            'display':'none'
-        });
         images.css({
-            'width':(browserWidth *.3)+'px',
-            'top':(browserHeight *.15)+'px',
-            'left':(browserWidth *.35)+'px'
+            'width':(browserWidth *.4)+'px',
+            'top':(browserHeight *.1)+'px',
+            'left':(browserWidth *.33)+'px'
         });
         $('#black-flag').css({
-            'top':(browserHeight *.20)+'px',
-            'left':(browserWidth *.68)+'px'
+            'top':(browserHeight *.15)+'px',
+            'left':(browserWidth *.58)+'px'
         });
         $('#click').css({
+            'width':(browserWidth *.4)+'px',
+            'top':(browserHeight *.05)+'px',
+            'left':(browserWidth *.58),
             'display':'none'
         });
+
         setTimeout(function(){
             $('#white-flag').animate({
-                'top':(browserHeight *.20)+'px',
-                'left':(browserWidth *.68)+'px'
+                'top':(browserHeight *.15)+'px',
+                'left':(browserWidth *.58)+'px'
             },1500, function(){
                 $('#twok15').fadeIn();
                 $('#click').fadeIn();
