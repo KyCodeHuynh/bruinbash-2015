@@ -80,13 +80,19 @@ function responsiveImg(){
             'top':(browserHeight *.4)+'px',
             'left':(browserWidth *.15)+'px'
         });
+        $('#black-flag').css({
+            'top':(browserHeight *.02)+'px'
+        });
         $('#click').css({
             'display':'none'
         });
         setTimeout(function(){
-            $('#flag').animate({
+            $('#white-flag').animate({
                 'top':(browserHeight *.02)+'px'
-            },1500);
+            },1500, function(){
+                $('#black-flag').fadeIn();
+                $('#white-flag').fadeOut();
+            });
             $('#slideshow').animate({
                 'top':(browserHeight *.5)+'px'
             },1500, function(){
