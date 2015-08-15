@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f5693c9-140c-404b-8d7b-a7a10b494317" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/styles.css" afterPath="$PROJECT_DIR$/css/styles.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/flipclock.css" afterPath="$PROJECT_DIR$/css/flipclock.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="bbash2015.iws" />
@@ -25,10 +24,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.19428572">
+            <state vertical-scroll-proportion="-2.6153846">
               <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
               <folding>
                 <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -44,11 +43,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flipclock.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="flipclock.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/flipclock.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="151" column="48" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.47186932">
+              <caret line="155" column="145" selection-start-line="155" selection-start-column="145" selection-end-line="155" selection-end-column="145" />
               <folding />
             </state>
           </provider>
@@ -89,8 +88,8 @@
       <file leaf-file-name="styles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.862069">
-              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="230" selection-end-column="1" />
+            <state vertical-scroll-proportion="-11.965517">
+              <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="124" selection-end-column="159" />
               <folding />
             </state>
           </provider>
@@ -118,13 +117,13 @@
         <option value="$PROJECT_DIR$/js/countdown.html" />
         <option value="$PROJECT_DIR$/countdown.html" />
         <option value="$PROJECT_DIR$/m.index.html" />
-        <option value="$PROJECT_DIR$/css/flipclock.css" />
         <option value="$PROJECT_DIR$/logos.html" />
         <option value="$PROJECT_DIR$/mobilelogos" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/css/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/css/flipclock.css" />
       </list>
     </option>
   </component>
@@ -136,10 +135,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-13" />
-    <option name="y" value="89" />
-    <option name="width" value="883" />
-    <option name="height" value="513" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -430,11 +429,17 @@
       <option name="project" value="LOCAL" />
       <updated>1439610245195</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="changed responsive meta tag">
+      <created>1439656610475</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1439656610475</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-13" y="89" width="883" height="513" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25256976" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -472,7 +477,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="edited bar" />
     <MESSAGE value="fixed slideshow" />
     <MESSAGE value="updated slideshow some more: more responsive and fixed flag sizes" />
     <MESSAGE value="centered flag, fade out when flag clicked, added white background" />
@@ -497,7 +501,8 @@
     <MESSAGE value="http for cec logo" />
     <MESSAGE value="http for logos" />
     <MESSAGE value="changed responsive ratio" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed responsive ratio" />
+    <MESSAGE value="changed responsive meta tag" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed responsive meta tag" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -955,14 +960,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/flipclock.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="151" column="48" selection-start-line="151" selection-start-column="48" selection-end-line="151" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logos.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -979,14 +976,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/styles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.862069">
-          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="230" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -999,7 +988,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.19428572">
+        <state vertical-scroll-proportion="-2.6153846">
           <caret line="4" column="71" selection-start-line="4" selection-start-column="71" selection-end-line="4" selection-end-column="71" />
           <folding>
             <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1011,6 +1000,22 @@
             <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#img#0;n#a#4;n#div#0;n#div#1;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/styles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.965517">
+          <caret line="120" column="1" selection-start-line="120" selection-start-column="1" selection-end-line="124" selection-end-column="159" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/flipclock.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.47186932">
+          <caret line="155" column="145" selection-start-line="155" selection-start-column="145" selection-end-line="155" selection-end-column="145" />
+          <folding />
         </state>
       </provider>
     </entry>
