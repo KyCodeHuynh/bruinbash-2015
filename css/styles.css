@@ -43,7 +43,7 @@
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 1199px) {
+@media (min-width: 800px) and (max-width: 1199px) {
     .clock {
         zoom: .8;
         -moz-transform: scale(.8);
@@ -63,7 +63,7 @@
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 767px) {
+@media (max-width: 800px) {
     .clock{
         zoom: .6;
         -moz-transform: scale(.8);

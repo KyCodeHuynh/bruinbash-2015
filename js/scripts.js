@@ -60,7 +60,7 @@ function responsiveImg(){
         'z-index':'10'
         });
 
-    if(browserWidth<757){
+    if(browserWidth<800){
         $.ajax('mobilelogos',{
            success: function(response){
                $('.mobileLogo').html(response);
