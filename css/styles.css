@@ -10,8 +10,14 @@
     font-style: normal;
 }
 
+@media(min-width: 1500px){
+    .logoPlacement{
+        margin-left:15%;
+    }
+}
+
 /* Large desktop */
-@media (min-width: 1200px) {
+@media (min-width: 1200px) and (max-width: 1499px) {
     .clock{
         zoom: 1.35;
         -moz-transform: scale(1.35);
