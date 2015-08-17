@@ -11,8 +11,33 @@
 }
 
 @media(min-width: 1500px){
+    .clock{
+        zoom: 1.35;
+        -moz-transform: scale(1.35);
+    }
+    #date{
+        font-size: 60px;
+    }
+
     .logoPlacement{
-        margin-left:15%;
+        margin-left:15%
+    }
+    .icon,.cac{
+        width:2.5em;
+    }
+
+    .logos{
+        width:9em;
+    }
+
+    .logos1{
+        width:6em;
+    }
+    #nissan{
+        width:13em;
+    }
+    #uclarec{
+        width:12em;
     }
 }
 
