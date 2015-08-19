@@ -56,7 +56,6 @@ function responsiveImg(){
     });
     $('#tap').css({
          display:'none',
-        width:'100%',
         'z-index':'10'
         });
 
@@ -74,8 +73,7 @@ function responsiveImg(){
             'right':"40px"
         });
         $('#tap').css({
-            'top':(browserHeight *.4)+'px',
-            'left':(browserWidth *.25)
+            'top':(browserHeight *.35)+'px'
         });
 
         images.css({
