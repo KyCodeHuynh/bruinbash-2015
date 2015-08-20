@@ -5,9 +5,6 @@
 jQuery(document).ready(function(){
     var browserWidth=$(window).width();
     var browserHeight=$(window).height();
-    /*if(browserWidth<767){
-        document.location = "m.index.html";
-    }*/
     var date = new Date(2015, 8, 21);
     var now = new Date();
     var diff = (date.getTime()/1000) - (now.getTime()/1000);
@@ -58,7 +55,6 @@ function responsiveImg(){
          display:'none',
         'z-index':'10'
         });
-
     if(browserWidth<800){
         $.ajax('mobilelogos',{
            success: function(response){
@@ -105,9 +101,9 @@ function responsiveImg(){
         },3000);
     }
     else{
-        $.ajax('logos.html',{
+        $.ajax('mobilelogos',{
             success: function(response){
-                $('.logoPlacement').html(response);
+                $('.mobileLogo').html(response);
             }
         });
         $('#bbash').css({
