@@ -34,7 +34,7 @@
         width:6em;
     }
     #nissan{
-        width:13em;
+        width:15em;
     }
     #uclarec{
         width:12em;
@@ -44,8 +44,8 @@
 /* Large desktop */
 @media (min-width: 1200px) and (max-width: 1499px) {
     .clock{
-        zoom: 1.35;
-        -moz-transform: scale(1.35);
+        zoom: 1.1;
+        -moz-transform: scale(1.1);
     }
     #date{
         font-size: 60px;
@@ -66,7 +66,7 @@
         width:6em;
     }
     #nissan{
-        width:13em;
+        width:15em;
     }
     #uclarec{
         width:12em;
@@ -97,7 +97,7 @@
 @media (max-width: 800px) {
     .clock{
         zoom: .6;
-        -moz-transform: scale(.8);
+        -moz-transform: scale(.6);
     }
     #date {
         font-size: 40px;
