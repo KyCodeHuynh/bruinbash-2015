@@ -9,14 +9,29 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'apercubold';
+    src: url('../fonts/apercu_bold-webfont.eot');
+    src: url('../fonts/apercu_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu_bold-webfont.woff2') format('woff2'),
+    url('../fonts/apercu_bold-webfont.woff') format('woff'),
+    url('../fonts/apercu_bold-webfont.ttf') format('truetype'),
+    url('../fonts/apercu_bold-webfont.svg#apercubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @media(min-width: 1500px){
+    #title{
+        font-size:50px;
+    }
     .clock{
         zoom: 1.35;
         -moz-transform: scale(1.35);
     }
     #date{
-        font-size: 60px;
+        font-size: 70px;
     }
 
     .logoPlacement{
@@ -43,6 +58,9 @@
 
 /* Large desktop */
 @media (min-width: 1200px) and (max-width: 1499px) {
+    #title{
+        font-size:50px;
+    }
     .clock{
         zoom: 1.1;
         -moz-transform: scale(1.1);
@@ -50,7 +68,9 @@
     #date{
         font-size: 60px;
     }
-
+    #tag-line{
+        font-size:35px;
+    }
     .logoPlacement{
         margin-left:9%
     }
@@ -75,12 +95,15 @@
 
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 800px) and (max-width: 1199px) {
+    #title{
+        font-size:40px;
+    }
     .clock {
         zoom: .8;
         -moz-transform: scale(.8);
     }
     #date{
-        font-size:70px;
+        font-size:30px;
     }
     .logoPlacement{
         margin-left:30%
@@ -95,12 +118,15 @@
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 800px) {
+    #title{
+        font-size:40px;
+    }
     .clock{
         zoom: .6;
         -moz-transform: scale(.6);
     }
     #date {
-        font-size: 40px;
+        font-size: 30px;
     }
     .logoPlacement{
         margin-left:18%
@@ -115,6 +141,9 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    #title{
+        font-size:30px;
+    }
     .clock {
         zoom: .5;
         -moz-transform: scale(.6);
@@ -146,10 +175,6 @@
     cursor:pointer;
 }
 
-html, body{
-    margin:0;
-    height:100%;
-}
 
 body{
     background:linear-gradient(rgb(145, 216, 239),white,rgb(246, 238, 27));

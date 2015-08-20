@@ -12,7 +12,16 @@ jQuery(document).ready(function(){
     clockFace: 'DailyCounter',
     countdown: true}
     );
-
+    $('body').css({
+        overflow:'hidden',
+        margin:'0',
+        height:'100%'
+    });
+    $('html').css({
+        overflow:'hidden',
+        margin:'0',
+        height:'100%'
+    });
     animation();
 
 });
@@ -31,11 +40,37 @@ function animation(){
         $('.intro').fadeOut();
         setTimeout(function(){
             $('.main').fadeIn(1000);
+            $('body').css({
+                'overflow-y':'visible',
+                margin:'0',
+                display:'block',
+                top:'0',
+                bottom:'0',
+                width:'100%'
+            });
+            $('html').css({
+                'overflow-y':'visible',
+                margin:'0',
+                display:'block',
+                top:'0',
+                bottom:'0',
+                width:'100%'
+            });
         },1000);
     });
     x.on('click',function(){
         responsiveImg();
         $('.main').fadeOut();
+        $('body').css({
+            overflow:'hidden',
+            margin:'0',
+            height:'100%'
+        });
+        $('html').css({
+            overflow:'hidden',
+            margin:'0',
+            height:'100%'
+        });
         $('.intro').fadeIn();
     });
 }

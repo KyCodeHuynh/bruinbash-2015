@@ -149,11 +149,11 @@
   height: 200%;
   color: black;
   text-align: center;
-  background: linear-gradient(rgb(212, 240, 249), #d5ffff,white);
-  background: -webkit-linear-gradient(rgb(212, 240, 249), #d5ffff,white); /* For Safari 5.1 to 6.0 */
-  background: -o-linear-gradient(rgb(212, 240, 249), #d5ffff,white); /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(rgb(212, 240, 249), #d5ffff,white); /* For Firefox 3.6 to 15 */
-  background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgb(212, 240, 249)),color-stop(50%, #d5ffff), color-stop(100%, white));
+  background: linear-gradient(#FCFEFE, #FFFEEA,#FCFABB);
+  background: -webkit-linear-gradient(#FCFEFE, #FFFEEA,#FCFABB); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#FCFEFE, #FFFEEA,#FCFABB); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#FCFEFE, #FFFEEA,#FCFABB); /* For Firefox 3.6 to 15 */
+  background-image:-webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #FCFEFE),color-stop(50%, #FFFEEA), color-stop(100%,#FCFABB));
   border-radius: 6px;
   font-size: 70px; }
 
