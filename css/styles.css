@@ -119,6 +119,9 @@
         zoom: .5;
         -moz-transform: scale(.6);
     }
+    .flip {
+        zoom: 1.03
+    }
     #date {
         font-size:30px;
     }
