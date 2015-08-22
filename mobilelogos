@@ -14,13 +14,13 @@
     </div>
     <div class="row" style="margin-left:17%">
         <a href="http://www.recreation.ucla.edu/" target="_blank" >
-            <img src="images/uclarec.png" alt="UCLA Recreation" style="margin-top:3%; display:inline-block; text-align:center;" id="uclarec" class="col-md-3 col-xs-3">
+            <img src="images/uclarec.png" alt="UCLA Recreation" style="margin-top:3%; display:inline-block; text-align:center;" id="uclarec" class="col-md-3 col-xs-4">
         </a>
         <a href="http://us.coca-cola.com/home/" target="_blank">
-            <img src="images/Coke.png" alt="Coke" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
+            <img src="images/Coke.png" alt="Coke" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-3">
         </a>
         <a href="http://us.coca-cola.com/home/" target="_blank">
-            <img src="images/14474RF%20Coke%20Zero.jpg" alt="Coke" style="margin-top:2%; margin-left:-5px; display:inline-block; text-align:center;" class="logos1 col-md-1 col-xs-2">
+            <img src="images/14474RF%20Coke%20Zero.jpg" alt="Coke" style="margin-top:2%; margin-left:-5px; display:inline-block; text-align:center;" class="logos1 col-md-1 col-xs-3">
         </a>
     </div>
     <div class="row" style="margin-left:22%">
@@ -28,7 +28,7 @@
             <img src="images/Got-2-B.png" alt="Got 2 B" class="logos1 col-md-3 col-xs-3" style="margin-top:3%; display:inline-block; text-align:center;">
         </a>
         <a href="https://www.lyft.com/download?code=ONTHEHOUSELAX" target="_blank">
-            <img src="images/Lyft.png" alt="Lyft" style="margin:1%; margin-top: 1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
+            <img src="images/Lyft.png" alt="Lyft" style="margin:1%; margin-top: 3%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
         </a>
         <a href="http://www.qollege.com/" target="_blank">
             <img src="images/Qollege.png" alt="Qollege" style="margin-top:3%; display:inline-block; text-align:center;"  class="logos1 col-md-3 col-xs-4">
