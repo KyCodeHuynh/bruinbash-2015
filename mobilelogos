@@ -17,10 +17,10 @@
             <img src="images/uclarec.png" alt="UCLA Recreation" style="margin-top:3%; display:inline-block; text-align:center;" id="uclarec" class="col-md-3 col-xs-4">
         </a>
         <a href="http://us.coca-cola.com/home/" target="_blank">
-            <img src="images/Coke.png" alt="Coke" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-3">
+            <img src="images/Coke.png" alt="Coke" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
         </a>
         <a href="http://us.coca-cola.com/home/" target="_blank">
-            <img src="images/14474RF%20Coke%20Zero.jpg" alt="Coke" style="margin-top:2%; margin-left:-5px; display:inline-block; text-align:center;" class="logos1 col-md-1 col-xs-3">
+            <img src="images/14474RF%20Coke%20Zero.jpg" alt="Coke" style="margin-top:2%; margin-left:-5px; display:inline-block; text-align:center;" class="logos1 col-md-1 col-xs-2">
         </a>
     </div>
     <div class="row" style="margin-left:22%">
