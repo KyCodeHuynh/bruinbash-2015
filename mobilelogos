@@ -12,18 +12,20 @@
             <img src="images/cac.png" alt="CAC" class='logos col-md-1 col-xs-3'>
         </a>
     </div>
-    <div class="row" style="margin-left:8%">
+    <div class="row" style="margin-left:17%">
         <a href="http://www.recreation.ucla.edu/" target="_blank" >
             <img src="images/uclarec.png" alt="UCLA Recreation" style="margin-top:3%; display:inline-block; text-align:center;" id="uclarec" class="col-md-3 col-xs-3">
         </a>
-        <a href="http://www.got2b.us/got2b/us/en/home.html" target="_blank">
-            <img src="images/Got-2-B.png" alt="Got 2 B" class="logos1 col-md-2 col-xs-2" style="margin-top:3%; display:inline-block; text-align:center;">
+        <a href="http://us.coca-cola.com/home/" target="_blank">
+            <img src="images/Coke.png" alt="Coke" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
         </a>
         <a href="http://us.coca-cola.com/home/" target="_blank">
             <img src="images/14474RF%20Coke%20Zero.jpg" alt="Coke" style="margin-top:2%; margin-left:-5px; display:inline-block; text-align:center;" class="logos1 col-md-1 col-xs-2">
         </a>
-        <a href="http://us.coca-cola.com/home/" target="_blank">
-            <img src="images/Coke.png" alt="Coke" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
+    </div>
+    <div class="row" style="margin-left:22%">
+        <a href="http://www.got2b.us/got2b/us/en/home.html" target="_blank">
+            <img src="images/Got-2-B.png" alt="Got 2 B" class="logos1 col-md-2 col-xs-2" style="margin-top:3%; display:inline-block; text-align:center;">
         </a>
         <a href="https://www.lyft.com/download?code=ONTHEHOUSELAX" target="_blank">
             <img src="images/Lyft.png" alt="Lyft" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
