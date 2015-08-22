@@ -12,7 +12,7 @@
             <img src="images/cac.png" alt="CAC" class='logos col-md-1 col-xs-3'>
         </a>
     </div>
-    <div class="row" style="margin-left:10%">
+    <div class="row" style="margin-left:8%">
         <a href="http://www.recreation.ucla.edu/" target="_blank" >
             <img src="images/uclarec.png" alt="UCLA Recreation" style="margin-top:3%; display:inline-block; text-align:center;" id="uclarec" class="col-md-3 col-xs-3">
         </a>
@@ -26,7 +26,10 @@
             <img src="images/Coke.png" alt="Coke" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
         </a>
         <a href="https://www.lyft.com/download?code=ONTHEHOUSELAX" target="_blank">
-            <img src="images/Lyft.png" alt="Coke" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
+            <img src="images/Lyft.png" alt="Lyft" style="margin:1%; display:inline-block; text-align:center;"  class="logos1 col-md-1 col-xs-2">
+        </a>
+        <a href="#" target="_blank">
+            <img src="images/Qollege.png" alt="Qollege" style="margin-top:3%; display:inline-block; text-align:center;"  class="logos1 col-md-2 col-xs-2">
         </a>
     </div>
 </div>
