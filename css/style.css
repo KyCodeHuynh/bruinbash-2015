@@ -1,0 +1,66 @@
+body,html{
+    height:100%;
+}
+
+@-webkit-keyframes background-changing {
+    0% {background-color:rgb(145, 216, 239);}
+    50%{background-color: white;}
+    100%{background-color:rgb(246, 238, 27);}
+}
+
+@keyframes background-changing {
+    0% {background-color:rgb(145, 216, 239);}
+    50%{background-color: white;}
+    100%{background-color:rgb(246, 238, 27);}
+}
+
+body{
+    animation: background-changing 10s linear 0s infinite alternate;
+    -webkit-animation: background-changing 10s linear 0s infinite alternate;
+    margin:0;
+    padding:0;
+}
+
+.buttons{
+    margin:20% 3% 20% 3%;
+    padding-right:2%;
+    width:10%;
+    position:fixed;
+    cursor:pointer;
+}
+
+.top{  top:-30%;  }
+.middle{  top:0;  }
+.bottom{  top:30%;  }
+
+#splash-logo{position:relative; top:-20px;}
+
+
+/*Triple line*/
+.line, .line:before, .line:after{border:5px solid #000; width:100%;}
+
+
+/*Triple border*/
+.dtborder, .dtborder:before, .dtborder:after{  border:5px solid #000; }
+
+.dtborder {
+    position:relative;
+    padding:30px;
+}
+.dtborder:before {
+    content:"";
+    position: absolute;
+    top:5px;
+    bottom:5px;
+    left:5px;
+    right:5px;
+}
+
+.dtborder:after {
+    content:"";
+    position: absolute;
+    top:15px;
+    bottom:15px;
+    left:15px;
+    right:15px;
+}
