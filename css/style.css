@@ -1,3 +1,27 @@
+@font-face {
+    font-family: 'Parade Snoop';
+    src: url('../fonts/parade_snoop-webfont.eot');
+    src: url('../fonts/parade_snoop-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/parade_snoop-webfont.woff2') format('woff2'),
+    url('../fonts/parade_snoop-webfont.woff') format('woff'),
+    url('../fonts/parade_snoop-webfont.ttf') format('truetype'),
+    url('../fonts/parade_snoop-webfont.svg#parade_lift_snoop') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'apercubold';
+    src: url('../fonts/apercu_bold-webfont.eot');
+    src: url('../fonts/apercu_bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/apercu_bold-webfont.woff2') format('woff2'),
+    url('../fonts/apercu_bold-webfont.woff') format('woff'),
+    url('../fonts/apercu_bold-webfont.ttf') format('truetype'),
+    url('../fonts/apercu_bold-webfont.svg#apercubold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body,html{
     height:100%;
 }
@@ -17,8 +41,11 @@ body,html{
 body{
     animation: background-changing 10s linear 0s infinite alternate;
     -webkit-animation: background-changing 10s linear 0s infinite alternate;
+    -moz-animation: background-changing 10s linear 0s infinite alternate ;
     margin:0;
     padding:0;
+    font-family: apercubold;
+    color:black;
 }
 
 .buttons{
@@ -35,6 +62,78 @@ body{
 
 #splash-logo{position:relative; top:-20px;}
 
+/*Rotating text*/
+@-webkit-keyframes right-spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes right-spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);}
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes right-spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);}
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes right-spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);}
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating{
+    -webkit-animation: right-spin 10s linear 0s infinite;
+    -o-animation: right-spin 10s linear 0s infinite;
+    animation: right-spin 10s linear 0s infinite;
+    transform-origin: 40% 50% 0;
+}
 
 /*Triple line*/
 .line, .line:before, .line:after{border:5px solid #000; width:100%;}
@@ -57,7 +156,7 @@ body{
 }
 
 .dtborder:after {
-    content:"";
+    content:none;
     position: absolute;
     top:15px;
     bottom:15px;
