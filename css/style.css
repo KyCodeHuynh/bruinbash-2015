@@ -1,0 +1,188 @@
+@font-face {
+    font-family: 'Parade Snoop';
+    src: url('../fonts/parade_snoop-webfont.eot');
+    src: url('../fonts/parade_snoop-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/parade_snoop-webfont.woff2') format('woff2'),
+    url('../fonts/parade_snoop-webfont.woff') format('woff'),
+    url('../fonts/parade_snoop-webfont.ttf') format('truetype'),
+    url('../fonts/parade_snoop-webfont.svg#parade_lift_snoop') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cocogooseregular';
+    src: url('../fonts/cocogoose_trial-webfont.eot');
+    src: url('../fonts/cocogoose_trial-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cocogoose_trial-webfont.woff2') format('woff2'),
+    url('../fonts/cocogoose_trial-webfont.woff') format('woff'),
+    url('../fonts/cocogoose_trial-webfont.ttf') format('truetype'),
+    url('../fonts/cocogoose_trial-webfont.svg#cocogooseregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html{
+    height:100%;
+}
+
+@-webkit-keyframes background-changing {
+    0% {background-color:rgb(145, 216, 239);}
+    50%{background-color: lightgreen;}
+    100%{background-color:rgb(246, 238, 27);}
+}
+
+@keyframes background-changing {
+    0% {background-color:rgb(145, 216, 239);}
+    50%{background-color: lightgreen;}
+    100%{background-color:rgb(246, 238, 27);}
+}
+
+body{
+    animation: background-changing 10s linear 0s infinite alternate;
+    -webkit-animation: background-changing 10s linear 0s infinite alternate;
+    -moz-animation: background-changing 10s linear 0s infinite alternate ;
+    margin:0;
+    padding:0;
+    font-family: cocogooseregular;
+    color:black;
+}
+
+.buttons{
+    margin:20% 3% 20% 3%;
+    padding-right:2%;
+    width:10%;
+    position:fixed;
+    cursor:pointer;
+}
+
+/*Nav button positioning*/
+.top{  top:-30%;  }
+.middle{  top:0;  }
+.bottom{  top:30%;  }
+#logo{
+    position:fixed;
+    width:10%;
+    display:none;
+    cursor:pointer;
+}
+
+/*Rotating text*/
+@-webkit-keyframes right-spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-o-keyframes right-spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);}
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes right-spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);}
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes right-spin {
+    0%{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);}
+    100%{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.rotating{
+    -webkit-animation: right-spin 10s linear 0s infinite;
+    -o-animation: right-spin 10s linear 0s infinite;
+    animation: right-spin 10s linear 0s infinite;
+    transform-origin: 40% 50% 0;
+}
+
+/*Triple line*/
+.line{border:2px solid #000; width:100%; margin-top:5px;}
+
+
+/*Triple border*/
+.dtborder, .dtborder:before, .dtborder:after{  border:5px solid #000; }
+
+.dtborder {
+    position:relative;
+    padding:30px;
+}
+.dtborder:before {
+    content:"";
+    position: absolute;
+    top:5px;
+    bottom:5px;
+    left:5px;
+    right:5px;
+}
+
+.dtborder:after {
+    content:none;
+    position: absolute;
+    top:15px;
+    bottom:15px;
+    left:15px;
+    right:15px;
+}
+
+/*Blank Spacing*/
+.lg-buffer{ height: 100px; position:relative; z-index:-1;}
+
+/*Random stuff on the splash page*/
+#splash-logo{position:relative; top:-20px;}
+.container h1{  line-height: 200%;}
+
+/*Concert Page Stuff*/
+
+#artist-1{
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+}
