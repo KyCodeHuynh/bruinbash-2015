@@ -9,14 +9,15 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
-    font-family: 'apercubold';
-    src: url('../fonts/apercu_bold-webfont.eot');
-    src: url('../fonts/apercu_bold-webfont.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/apercu_bold-webfont.woff2') format('woff2'),
-    url('../fonts/apercu_bold-webfont.woff') format('woff'),
-    url('../fonts/apercu_bold-webfont.ttf') format('truetype'),
-    url('../fonts/apercu_bold-webfont.svg#apercubold') format('svg');
+    font-family: 'cocogooseregular';
+    src: url('../fonts/cocogoose_trial-webfont.eot');
+    src: url('../fonts/cocogoose_trial-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/cocogoose_trial-webfont.woff2') format('woff2'),
+    url('../fonts/cocogoose_trial-webfont.woff') format('woff'),
+    url('../fonts/cocogoose_trial-webfont.ttf') format('truetype'),
+    url('../fonts/cocogoose_trial-webfont.svg#cocogooseregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -28,13 +29,13 @@ html{
 
 @-webkit-keyframes background-changing {
     0% {background-color:rgb(145, 216, 239);}
-    50%{background-color: white;}
+    50%{background-color: lightgreen;}
     100%{background-color:rgb(246, 238, 27);}
 }
 
 @keyframes background-changing {
     0% {background-color:rgb(145, 216, 239);}
-    50%{background-color: white;}
+    50%{background-color: lightgreen;}
     100%{background-color:rgb(246, 238, 27);}
 }
 
@@ -44,7 +45,7 @@ body{
     -moz-animation: background-changing 10s linear 0s infinite alternate ;
     margin:0;
     padding:0;
-    font-family: apercubold;
+    font-family: cocogooseregular;
     color:black;
 }
 
@@ -60,6 +61,12 @@ body{
 .top{  top:-30%;  }
 .middle{  top:0;  }
 .bottom{  top:30%;  }
+#logo{
+    position:fixed;
+    width:10%;
+    display:none;
+    cursor:pointer;
+}
 
 /*Rotating text*/
 @-webkit-keyframes right-spin {
@@ -169,3 +176,13 @@ body{
 /*Random stuff on the splash page*/
 #splash-logo{position:relative; top:-20px;}
 .container h1{  line-height: 200%;}
+
+/*Concert Page Stuff*/
+
+#artist-1{
+    -webkit-transform: skew(10deg);
+    -moz-transform: skew(10deg);
+    -ms-transform: skew(10deg);
+    -o-transform: skew(10deg);
+    transform: skew(10deg);
+}
