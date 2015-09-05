@@ -3,18 +3,25 @@
  */
 
 jQuery(document).ready(function(){
-    $('body').height($(document).height());
+    $('body').height($(document).height()*10);
 
-    $('.concerts').on("mouseenter",function(){
-        $('.white').removeClass('hidden');
-        $('.concerts').addClass('hidden');
-    });
-    white($('.concerts'));
+    white('concerts');
+    white('festival');
+    white('faq');
+    white('film');
+    white('tickets');
+    white('thanks');
 });
 
 function white(button){
-    $('.white').on('mouseout',function(){
-        $('.white').addClass('hidden');
-        button.removeClass('hidden');
+    var buttonID='#'+button;
+    var buttonClass='.'+button;
+    $(buttonClass).on("mouseenter",function(){
+        $(buttonClass).children(".white").removeClass('hidden');
+        $(buttonClass).children(buttonID).addClass('hidden');
+    });
+    $(buttonClass).find($('.white')).on('mouseout',function(){
+        $(buttonClass).children('.white').addClass('hidden');
+        $(buttonClass).children(buttonID).removeClass('hidden');
     });
 }

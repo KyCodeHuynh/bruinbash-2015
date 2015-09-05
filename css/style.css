@@ -22,7 +22,7 @@
 
 }
 
-body,html{
+html{
     height:100%;
 }
 
@@ -56,11 +56,10 @@ body{
     cursor:pointer;
 }
 
+/*Nav button positioning*/
 .top{  top:-30%;  }
 .middle{  top:0;  }
 .bottom{  top:30%;  }
-
-#splash-logo{position:relative; top:-20px;}
 
 /*Rotating text*/
 @-webkit-keyframes right-spin {
@@ -136,7 +135,9 @@ body{
 }
 
 /*Triple line*/
-.line, .line:before, .line:after{border:5px solid #000; width:100%;}
+.line, .line:before, .line:after{border:5px solid #000; width:100%; margin-top:5%; position:relative;}
+.line:before{top:-5px;}
+.line:after{top:5px;}
 
 
 /*Triple border*/
@@ -163,3 +164,10 @@ body{
     left:15px;
     right:15px;
 }
+
+/*Blank Spacing*/
+.lg-buffer{ height: 100px;}
+
+/*Random stuff on the splash page*/
+#splash-logo{position:relative; top:-20px;}
+.container h1{  line-height: 200%;}
