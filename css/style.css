@@ -135,9 +135,7 @@ body{
 }
 
 /*Triple line*/
-.line, .line:before, .line:after{border:5px solid #000; width:100%; margin-top:5%; position:relative;}
-.line:before{top:-5px;}
-.line:after{top:5px;}
+.line{border:2px solid #000; width:100%; margin-top:5px;}
 
 
 /*Triple border*/
