@@ -177,6 +177,11 @@ body{
 #splash-logo{position:relative; top:-20px;}
 .container h1{  line-height: 200%;}
 
+
+.justify-text {
+    text-align:justify
+} 
+
 /*Concert Page Stuff*/
 
 #artist-1{
@@ -186,3 +191,4 @@ body{
     -o-transform: skew(10deg);
     transform: skew(10deg);
 }
+
