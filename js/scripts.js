@@ -5,9 +5,11 @@
 jQuery(document).ready(function(){
     $('body').height($(document).height());
 
+
     $('.concerts').on("mouseenter",function(){
         $('.white').removeClass('hidden');
         $('.concerts').addClass('hidden');
+
     });
     white($('.concerts'));
 });
