@@ -24,17 +24,14 @@ jQuery(document).ready(function(){
         top:$(window).height()-120+'px',
         left:$(window).width() *.45+'px'
     });
-    logo.on('click',function(){
-        $('html, body').animate({
-            scrollTop: $("#home").offset().top
-        }, 2000);
-    });
+    $('#logo-1').on('click',function(){scrollTo('#home')});
+   $('#concert-button').on('click',function(){scrollTo('#concert-page')});
+
     $(window).scroll(function(){
-        if($(window).scrollTop()>($(document).height() *.1)){
+        if($(window).scrollTop()>($(document).height() *.05)){
             logo.fadeIn('slow');
-        }
-        else{
-            logo.fadeOut();
+        }else{
+            logo.fadeOut('slow');
         }
     });
 
@@ -52,4 +49,10 @@ function white(button){
         $(buttonClass).children('.white').addClass('hidden');
         $(buttonClass).children(buttonID).removeClass('hidden');
     });
+}
+
+function scrollTo(id){
+    $('html, body').animate({
+        scrollTop: $(id).offset().top
+    }, 2000);
 }
