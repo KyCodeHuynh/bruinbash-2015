@@ -46,7 +46,7 @@
     }
 
     .logos1{
-        width:6em;
+        width:8em;
     }
     #nissan{
         width:15em;
@@ -83,7 +83,7 @@
     }
 
     .logos1{
-        width:6em;
+        width:8em;
     }
     #nissan{
         width:15em;
@@ -114,6 +114,9 @@
     .icon,.cac{
         width:2em;
     }
+    .logos1 {
+        width:7em;
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -136,6 +139,9 @@
     }
     .icon,.cac{
         width:2em;
+    }
+    .logos1 {
+        width:4em;
     }
 }
 
