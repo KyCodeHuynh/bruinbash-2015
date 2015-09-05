@@ -16,7 +16,9 @@ jQuery(document).ready(function(){
         left:$(window).width() *.45+'px'
     });
     $('#logo-1').on('click',function(){scrollTo('#home')});
+
    $('#concert-button').on('click',function(){scrollTo('#concert-page')});
+
 
     $(window).scroll(function(){
         if($(window).scrollTop()>($(document).height() *.05)){
@@ -43,6 +45,8 @@ function white(button){
 
 function scrollTo(id){
     $('html, body').animate({
+
         scrollTop: $(id).offset().top
     }, 2000);
+
 }
