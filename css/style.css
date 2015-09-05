@@ -169,3 +169,7 @@ body{
 /*Random stuff on the splash page*/
 #splash-logo{position:relative; top:-20px;}
 .container h1{  line-height: 200%;}
+
+.justify-text {
+    text-align:justify
+} 
