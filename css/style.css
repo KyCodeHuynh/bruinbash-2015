@@ -23,6 +23,54 @@
 
 }
 
+@media(min-width: 1500px){
+    .logoPlacement{  margin-left:13.5%  }
+    .icon,.cac{  width:2.5em;  }
+    .logos{  width:9em;  }
+    .logos1{  width:6em;  }
+    #nissan{  width:15em;  }
+    #uclarec{  width:12em;  }
+}
+
+/* Large desktop */
+@media (min-width: 1200px) and (max-width: 1499px) {
+    #tag-line{  font-size:35px;  }
+    .logoPlacement{  margin-left:9%  }
+    .icon,.cac{  width:2.5em;  }
+    .logos{  width:9em;  }
+    .logos1{  width:6em;  }
+    #nissan{  width:15em;  }
+    #uclarec{  width:12em;  }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 800px) and (max-width: 1199px) {
+    .logoPlacement{  margin-left:30%  }
+    .logoPlacement2{  margin-left:25%  }
+    .icon,.cac{  width:2em;  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 800px) {
+    h1{ font-size:25px; }
+    h2{ font-size:15px; }
+    h3{ font-size:12px; }
+    p{ font-size:10px; }
+    .logoPlacement{  margin-left:18%  }
+    .logoPlacement2{  margin-left:19%  }
+    .icon,.cac{  width:2em;  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+    h1{ font-size:25px; }
+    h2{ font-size:15px; }
+    h3{ font-size:12px; }
+    p{ font-size:10px; }
+    .logoPlacement{  margin-left:14%  }
+    .icon,.cac{  width:2em;  }
+}
+
 html{
     height:100%;
 }
@@ -48,6 +96,28 @@ body{
     font-family: cocogooseregular;
     color:black;
 }
+
+.clear-nav, .new-nav {
+    padding: 0.25%;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0!important;
+}
+
+.clear-nav{  background-color:transparent !important;  }
+
+.new-nav{  background-color: white!important;  }
+
+.navbar-nav > li > a {  color: black!important;  }
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover{
+    border-radius: 5px;
+    background-color:lightblue !important;
+    color: white !important;
+}
+
 
 .buttons{
     margin:20% 3% 20% 3%;
@@ -171,7 +241,9 @@ body{
 }
 
 /*Blank Spacing*/
-.lg-buffer{ height: 100px; position:relative; z-index:-1;}
+.lg-buffer, .md-buffer{position:relative; z-index:-1;}
+.lg-buffer{ height: 100px; }
+.md-buffer{ height:50px; }
 
 /*Random stuff on the splash page*/
 #splash-logo{position:relative; top:-20px;}

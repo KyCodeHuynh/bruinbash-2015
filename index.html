@@ -10,8 +10,33 @@
 </head>
 
 <body class="dtborder">
+<nav class="navbar navbar-default visible-xs clear-nav navbar-fixed-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                <li><a href="#concert-page">Concert</a></li>
+                <li><a href="#film-page">Film</a></li>
+                <li><a href="#festival-page">Festival</a></li>
+                <li><a href="#tickets-page">Tickets</a></li>
+                <li><a href="#faq-page">FAQ</a></li>
+                <li><a href="#thanks-page">Thanks</a></li>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+</nav>
         <!--Landing Page-->
-        <div class="col-md-3">
+        <div class="col-md-3 hidden-xs">
             <div class="concerts">
                 <img src="images/buttons/Concert.png" class="buttons top" id="concerts"/>
                 <div class="hidden white" id="concert-button">
@@ -33,17 +58,20 @@
                     <img src="images/buttons/FAQ%20Text.png" class="buttons bottom rotating"/>
                 </div>
             </div>
-
         </div>
         <div class="col-md-6" id="home">
-            <img src="images/bbash.png" class="col-md-10 col-md-offset-1" id="splash-logo"/>
-            <img src="images/2015.png" class="col-md-4 col-md-offset-4" id="twok15"/>
-            <h1 class="col-md-12 text-center">UCLA's CEC and CAC present Bruin Bash 2015
-            <br>Powered by Nissan's College Grad
-            </h1>
-            <div id="logo-1"><img src="images/whitebbash.png" id="logo"></div>
+            <img src="images/bbash.png" class="col-md-10 col-md-offset-1 col-xs-10 col-xs-offset-1" id="splash-logo"/>
+            <div class="row">
+                <img src="images/2015.png" class="col-md-4 col-md-offset-4 col-xs-6 col-xs-offset-3" id="twok15"/>
+            </div>
+            <div class="row">
+                <h2 class="col-md-12 text-center">UCLA's CEC and CAC present Bruin Bash 2015
+                    <br>Powered by Nissan's College Grad
+                </h2>
+            </div>
+            <div id="logo-1"><img src="images/whitebbash.png" id="logo" class="hidden-xs"></div>
         </div>
-        <div class="col-md-2 col-md-offset-1">
+        <div class="col-md-2 col-md-offset-1 hidden-xs">
             <div class="film">
                 <img src="images/buttons/Film.png" class="buttons top" id="film"/>
                 <div class="hidden white" id="film-button">
@@ -70,35 +98,30 @@
         <div class="lg-buffer col-md-12"></div>
         <!--about-->
         <div class="container">
-            <img src="images/bbash.png" class="col-md-2 col-md-offset-5">
+            <img src="images/bbash.png" class="col-md-2 col-md-offset-5 col-xs-10 col-xs-offset-1">
              <h1 class="col-md-4 col-md-offset-4 text-center">
                  Bruin Bash is a kickass on-campus concert and festival
                  thrown by students (us) to welcome students (you) back home.
              </h1>
+
         </div>
         <!--about-->
-        <div class="lg-buffer col-md-12"></div>
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <div class="col-md-12">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-
-
-        <div class="lg-buffer col-md-12"></div>
-		
-		
-
-
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <!--Concert Page -->
         <div class="container">
             <div class="row">
                 <div class="col-md-5">
-                    <img src="images/buttons/Concert%20Symbol%20Black.png" class="col-md-4 pull-right">
+                    <img src="images/buttons/Concert%20Symbol%20Black.png" class="col-md-4 pull-right hidden-xs">
                 </div>
-                <h1 class="text-center col-md-2" style="line-height:250%;" id="concert-page">Concert</h1>
+                <h1 class="text-center col-md-2 col-xs-12" style="line-height:250%;" id="concert-page">CONCERT</h1>
                 <div class="col-md-5">
-                    <img src="images/buttons/Concert%20Symbol%20Black.png" class="col-md-4 pull-left">
+                    <img src="images/buttons/Concert%20Symbol%20Black.png" class="col-md-4 pull-left hidden-xs">
                 </div>
             </div>
             <div class="row">
@@ -106,11 +129,11 @@
             </div>
             <div class="row">
                 <div class="col-md-9">
-                    <img src="images/2015.png" class="col-md-5 pull-right"/>
+                    <img src="images/2015.png" class="col-md-5 pull-right col-xs-8"/>
                 </div>
             </div>
             <div class="row">
-                <img src="images/troll.jpg" class="col-md-4 col-md-offset-4" id="artist-1"/>
+                <img src="images/troll.jpg" class="col-md-4 col-md-offset-4 col-xs-10 col-xs-offset-1" id="artist-1"/>
             </div>
             <div class="row">
                 <div class="col-md-4 col-md-offset-4">
@@ -122,29 +145,25 @@
                 </div>
             </div>
             <div class="col-md-9 col-md-offset-3">
-                <img src="images/2015.png" class="col-md-5 pull-left"/>
+                <img src="images/2015.png" class="col-md-5 pull-left col-xs-8"/>
             </div>
         </div>
-
 		<!--Film Page-->
-		
-		 <div class="lg-buffer col-md-12"></div>
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <div class="col-md-12">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-
-        <div class="lg-buffer col-md-12"></div>
-		
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <!--Film Page-->
         <div class="row">
             <div class="col-md-5">
-                <img src="images/buttons/Film%20Symbol%20Black.png" class="col-md-4 pull-right">
+                <img src="images/buttons/Film%20Symbol%20Black.png" class="col-md-4 pull-right hidden-xs">
             </div>
-            <h1 class="text-center col-md-2" style="line-height:250%;" id="film-page">Film</h1>
+            <h1 class="text-center col-md-2 col-xs-12" style="line-height:250%;" id="film-page">FILM</h1>
             <div class="col-md-5">
-                <img src="images/buttons/Film%20Symbol%20Black.png" class="col-md-4 pull-left">
+                <img src="images/buttons/Film%20Symbol%20Black.png" class="col-md-4 pull-left hidden-xs">
             </div>
         </div>
         <div class="row">
@@ -159,7 +178,7 @@
         <div class="row">
             <div class="col-md-3 col-md-offset-3 justify-text">
                 <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Stolen_film_poster.jpg"/>
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus porta efficitur.
+                <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus porta efficitur.
                     In sollicitudin est a tellus sagittis, non cursus ex dictum. Morbi commodo, quam ac
                     commodo consequat, massa quam ullamcorper elit, in laoreet metus erat a urna. Sed lacinia
                     luctus nibh efficitur iaculis. Aenean laoreet orci libero, in consectetur ipsum elementum
@@ -168,12 +187,12 @@
                     lacinia dui efficitur tempor varius. Mauris non arcu ut urna dignissim cursus et vitae purus.
                     Sed porttitor nunc a ante rutrum aliquam. Donec a lectus ac urna ornare tempus. Morbi sed nulla
                     quis turpis ullamcorper suscipit.
-                </h4>
+                </h3>
             </div>
 
             <div class="col-md-3 col-md-offset-0.5 justify-text">
                 <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/Stolen_film_poster.jpg"/>
-                <h4>
+                <h3>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis tempus porta efficitur.
                     In sollicitudin est a tellus sagittis, non cursus ex dictum. Morbi commodo, quam ac
                     commodo consequat, massa quam ullamcorper elit, in laoreet metus erat a urna. Sed lacinia
@@ -183,60 +202,54 @@
                     lacinia dui efficitur tempor varius. Mauris non arcu ut urna dignissim cursus et vitae purus.
                     Sed porttitor nunc a ante rutrum aliquam. Donec a lectus ac urna ornare tempus. Morbi sed nulla
                     quis turpis ullamcorper suscipit.
-                    <br></h4>
+                    <br></h3>
             </div>
         </div>
         <!--add trailer links (where are trailer graphics?)-->
-
-        <div class="lg-buffer col-md-12"></div>
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <div class="col-md-12">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-
-        <div class="lg-buffer col-md-12"></div>
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <!--festival-->
 		 <div class="row">
-                <div class="col-md-5">
-                    <img src="images/buttons/Festival%20Symbol%20Black.png" class="col-md-4 pull-right">
-                </div>
-                <h1 class="text-center col-md-2" style="line-height:250%;" id="festival-page">Festival</h1>
-                <div class="col-md-5">
-                    <img src="images/buttons/Festival%20Symbol%20Black.png" class="col-md-4 pull-left">
-                </div>
-
-				
+            <div class="col-md-5">
+                <img src="images/buttons/Festival%20Symbol%20Black.png" class="col-md-4 pull-right hidden-xs">
+            </div>
+            <h1 class="text-center col-md-2 col-xs-12" style="line-height:250%;" id="festival-page">FESTIVAL</h1>
+            <div class="col-md-5">
+                <img src="images/buttons/Festival%20Symbol%20Black.png" class="col-md-4 pull-left hidden-xs">
+            </div>
         </div>
-		<h2 class="text-center">5-10PM INTRAMURAL FIELDS<br>
-		</h2>
-		<div class="col-md-8">
-			<img src="http://cdn.wdwmagic.com/imgstore/ElementGalleryItems/dining/Fullsize/West-Side-Food-Trucks_Full_20008.jpg" class="col-md-8 col-md-offset-5">
-		</div>
-
-
-         </div>
+		<h2 class="text-center">5-10PM INTRAMURAL FIELDS<br></h2>
+        <div class="row">
+            <div class="col-md-8 col-xs-12" style="position:relative; z-index:-1">
+                <img src="http://cdn.wdwmagic.com/imgstore/ElementGalleryItems/dining/Fullsize/West-Side-Food-Trucks_Full_20008.jpg"
+                     class="col-md-8 col-md-offset-5 col-xs-10 col-xs-offset-1"
+                        style="position:relative; z-index:-1">
+            </div>
+        </div>
         <!--festival-->
-        <div class="lg-buffer col-md-12"></div>
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <div class="col-md-12">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <div class="lg-buffer col-md-12"></div>
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <!--faq-->
         <div class="row">
             <div class="col-md-5">
-                <img src="images/buttons/FAQ%20Symbol%20Black.png" class="col-md-4 pull-right">
+                <img src="images/buttons/FAQ%20Symbol%20Black.png" class="col-md-4 pull-right hidden-xs">
             </div>
-            <h1 class="text-center col-md-2" style="line-height:250%;" id="faq-page">FAQ</h1>
+            <h1 class="text-center col-md-2 col-xs-12" style="line-height:250%;" id="faq-page">FAQ</h1>
             <div class="col-md-5">
-                <img src="images/buttons/FAQ%20Symbol%20Black.png" class="col-md-4 pull-left">
+                <img src="images/buttons/FAQ%20Symbol%20Black.png" class="col-md-4 pull-left hidden-xs">
             </div>
         </div>
-
-
-        <div class="col-md-2 col-md-offset-3">
+        <div class="col-md-2 col-md-offset-3 text-center">
             <a id="faq-ticket"><h2>TICKETS</h2></a>
             <a id="faq-concert"><h2>CONCERT</h2></a>
             <a id="faq-festival"><h2>FESTIVAL</h2></a>
@@ -271,26 +284,26 @@
             </div>
         </div>
         <!--faq-->
-        <div class="lg-buffer col-md-12"></div>
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <div class="col-md-12">
             <div class="line"></div>
             <div class="line"></div>
             <div class="line"></div>
         </div>
-        <div class="lg-buffer col-md-12"></div>
+        <div class="lg-buffer col-md-12 hidden-xs"></div>
         <!--sponsors-->
         <div class="row">
             <div class="col-md-5">
-                <img src="images/buttons/Sponsors%20Symbol%20Black.png" class="col-md-4 pull-right">
+                <img src="images/buttons/Sponsors%20Symbol%20Black.png" class="col-md-4 pull-right hidden-xs">
             </div>
-            <h1 class="text-center col-md-2" style="line-height:250%;" id="thanks-page">Thanks</h1>
+            <h1 class="text-center col-md-2" style="line-height:250%;" id="thanks-page">THANKS</h1>
             <div class="col-md-5">
-                <img src="images/buttons/Sponsors%20Symbol%20Black.png" class="col-md-4 pull-left">
+                <img src="images/buttons/Sponsors%20Symbol%20Black.png" class="col-md-4 pull-left hidden-xs">
             </div>
         </div>
-
+        <div class="md-buffer col-md-12"></div>
         <div class="mobileLogo col-md-offset-3">
-            <div class="row" style="margin-left:13%">
+            <div class="row" style="margin-left:10%">
                 <a href="http://uclacec.com" target="_blank">
                     <img src="images/cecb.png" alt="cec. bash us harder."  class="logos col-md-1 col-xs-3" >
                 </a>
@@ -302,7 +315,8 @@
                     <img src="images/cac.png" alt="CAC" class='logos col-md-1 col-xs-3'>
                 </a>
             </div>
-            <div class="row" style="margin-left:17%">
+            <div class="md-buffer col-md-12"></div>
+            <div class="row" style="margin-left:14%">
                 <a href="http://www.recreation.ucla.edu/" target="_blank" >
                     <img src="images/uclarec.png" alt="UCLA Recreation" style="margin-top:3%; display:inline-block; text-align:center;" id="uclarec" class="col-md-3 col-xs-4">
                 </a>
@@ -313,7 +327,8 @@
                     <img src="images/14474RF%20Coke%20Zero.jpg" alt="Coke" style="margin-top:2%; margin-left:-5px; display:inline-block; text-align:center;" class="logos1 col-md-1 col-xs-2">
                 </a>
             </div>
-            <div class="row" style="margin-left:22%">
+            <div class="md-buffer col-md-12"></div>
+            <div class="row" style="margin-left:19%">
                 <a href="http://www.got2b.us/got2b/us/en/home.html" target="_blank">
                     <img src="images/Got-2-B.png" alt="Got 2 B" class="logos1 col-md-3 col-xs-3" style="margin-top:3%; display:inline-block; text-align:center;">
                 </a>

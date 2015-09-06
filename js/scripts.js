@@ -3,7 +3,7 @@
  */
 
 jQuery(document).ready(function(){
-    $('body').height($(document).height()*1.5);
+    $('body').height($(document).height()*1.75);
     white('concerts');
     white('festival');
     white('faq');
