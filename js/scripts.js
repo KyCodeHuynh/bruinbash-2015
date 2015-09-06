@@ -19,7 +19,6 @@ jQuery(document).ready(function(){
 
    $('#concert-button').on('click',function(){scrollTo('#concert-page')});
 
-
     $(window).scroll(function(){
         if($(window).scrollTop()>($(document).height() *.05)){
             logo.fadeIn('slow');
@@ -46,7 +45,9 @@ function white(button){
 function scrollTo(id){
     $('html, body').animate({
 
+
         scrollTop: $(id).offset().top
     }, 2000);
+
 
 }
