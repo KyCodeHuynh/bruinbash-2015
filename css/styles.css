@@ -57,6 +57,9 @@
     #qollege {
         width:12em;
     }
+    #lyft {
+        width:8em;
+    }
 }
 
 /* Large desktop */
@@ -96,6 +99,9 @@
     }
     #qollege {
         width: 8em;
+    }
+    #lyft {
+        width: 5em;
     }
 }
 
