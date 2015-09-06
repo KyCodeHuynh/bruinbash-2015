@@ -4,7 +4,7 @@
 
 jQuery(document).ready(function(){
     if($(window).width()<757){
-        $('body').height($(document).height()*1.35);
+        $('body').height($(document).height()*1.5);
     }else{
         $('body').height($(document).height()*1.75);
     }
