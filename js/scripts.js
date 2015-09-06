@@ -3,7 +3,12 @@
  */
 
 jQuery(document).ready(function(){
-    $('body').height($(document).height()*1.75);
+    if($(window).width()<757){
+        $('body').height($(document).height()*1.35);
+    }else{
+        $('body').height($(document).height()*1.75);
+    }
+
     white('concerts');
     white('festival');
     white('faq');
