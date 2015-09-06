@@ -46,7 +46,7 @@
     }
 
     .logos1{
-        width:11em;
+        width:10em;
     }
     #nissan{
         width:15em;
@@ -54,9 +54,8 @@
     #uclarec{
         width:12em;
     }
-
     #qollege {
-        width:13em;
+        width:12em;
     }
 }
 
@@ -95,7 +94,6 @@
     #uclarec{
         width:12em;
     }
-
     #qollege {
         width: 8em;
     }
@@ -152,10 +150,10 @@
         width:2em;
     }
     .logos1 {
-        width:3em;
+        width:4em;
     }
     #qollege {
-        width: 4em;
+        width: 5em;
     }
 }
 
@@ -188,7 +186,7 @@
 .images{
     position: absolute;
     cursor: pointer;
-    display:none;
+    display: none;
 }
 
 .clickable{
