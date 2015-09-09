@@ -25,6 +25,7 @@ jQuery(document).ready(function(){
     $('#film-button').on('click',function(){scrollTo('#film-page')});
     $('#festival-button').on('click',function(){scrollTo('#festival-page')});
     $('#faq-button').on('click',function(){scrollTo('#faq-page')});
+    $('#tickets-button').on('click',function(){scrollTo('#tickets-page')});
     $('#thanks-button').on('click',function(){scrollTo('#thanks-page')});
     var counter=0;
     $(window).scroll(function(){
