@@ -3,11 +3,9 @@
  */
 
 jQuery(document).ready(function(){
-    if($(window).width()<757){
-        $('body').height($(document).height()*1.5);
-    }else{
-        $('body').height($(document).height()*1.75);
-    }
+
+    //$('body').height($(document).height()*1.75);
+
 
     white('concerts');
     white('festival');
@@ -25,12 +23,31 @@ jQuery(document).ready(function(){
     $('#film-button').on('click',function(){scrollTo('#film-page')});
     $('#festival-button').on('click',function(){scrollTo('#festival-page')});
     $('#faq-button').on('click',function(){scrollTo('#faq-page')});
+    $('#tickets-button').on('click',function(){scrollTo('#tickets-page')});
     $('#thanks-button').on('click',function(){scrollTo('#thanks-page')});
+    var counter=0;
     $(window).scroll(function(){
         if($(window).scrollTop()>($(document).height() *.05)){
             logo.fadeIn('slow');
         }else{
             logo.fadeOut('slow');
+        }
+
+        if($('#concert-page').height()<$(window).scrollTop()){
+            if(counter==0){
+                counter++;
+                setTimeout(function(){
+                    $('#intro-gif').fadeIn(2000,function(){
+                        setTimeout(function(){
+                            $('#intro-gif').fadeOut();
+                            $('#concert-block').fadeIn();
+                        },4500);
+                    });
+                },500);
+            }
+
+
+
         }
     });
     faq();

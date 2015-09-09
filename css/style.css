@@ -76,15 +76,23 @@ html{
 }
 
 @-webkit-keyframes background-changing {
-    0% {background-color:rgb(145, 216, 239);}
-    50%{background-color: lightgreen;}
-    100%{background-color:rgb(246, 238, 27);}
+    0% {background-color:#00FFFF;}
+    16.5%{background-color:#E6FFFF; }
+    33%{background-color: #FFFFEB;}
+    50%{background-color: #FFFF96;}
+    66.6%{background-color: #FFFFEB;}
+    83%{background-color: #E6FFFF;}
+    100%{background-color: #FFFF96;}
 }
 
 @keyframes background-changing {
-    0% {background-color:rgb(145, 216, 239);}
-    50%{background-color: lightgreen;}
-    100%{background-color:rgb(246, 238, 27);}
+    0% {background-color:#00FFFF;}
+    16.5%{background-color:#E6FFFF; }
+    33%{background-color: #FFFFEB;}
+    50%{background-color: #FFFF96;}
+    66.6%{background-color: #FFFFEB;}
+    83%{background-color: #E6FFFF;}
+    100%{background-color: #FFFF96;}
 }
 
 body{
@@ -271,4 +279,8 @@ a{color:black; cursor:pointer;}
     -o-transform: skew(10deg);
     transform: skew(10deg);
 }
+
+#intro-gif{display:none;position:relative; z-index:10;}
+
+/*Festival*/
 
