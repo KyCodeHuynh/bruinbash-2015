@@ -41,7 +41,7 @@ jQuery(document).ready(function(){
                         setTimeout(function(){
                             $('#intro-gif').fadeOut();
                             $('#concert-block').fadeIn();
-                        },6000);
+                        },4500);
                     });
                 },500);
             }
