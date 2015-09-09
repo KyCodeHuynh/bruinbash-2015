@@ -3,11 +3,9 @@
  */
 
 jQuery(document).ready(function(){
-    if($(window).width()<757){
-        $('body').height($(document).height()*1.5);
-    }else{
-        $('body').height($(document).height()*1.75);
-    }
+
+    $('body').height($(document).height()*1.75);
+
 
     white('concerts');
     white('festival');
