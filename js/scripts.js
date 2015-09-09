@@ -4,7 +4,7 @@
 
 jQuery(document).ready(function(){
 
-    $('body').height($(document).height()*1.75);
+    //$('body').height($(document).height()*1.75);
 
 
     white('concerts');
