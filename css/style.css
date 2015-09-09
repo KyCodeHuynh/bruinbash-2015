@@ -272,3 +272,5 @@ a{color:black; cursor:pointer;}
     transform: skew(10deg);
 }
 
+#intro-gif{display:none;position:relative; z-index:10;}
+

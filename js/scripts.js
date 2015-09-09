@@ -26,11 +26,29 @@ jQuery(document).ready(function(){
     $('#festival-button').on('click',function(){scrollTo('#festival-page')});
     $('#faq-button').on('click',function(){scrollTo('#faq-page')});
     $('#thanks-button').on('click',function(){scrollTo('#thanks-page')});
+    var counter=0;
     $(window).scroll(function(){
         if($(window).scrollTop()>($(document).height() *.05)){
             logo.fadeIn('slow');
         }else{
             logo.fadeOut('slow');
+        }
+
+        if($('#concert-page').height()<$(window).scrollTop()){
+            if(counter==0){
+                counter++;
+                setTimeout(function(){
+                    $('#intro-gif').fadeIn(2000,function(){
+                        setTimeout(function(){
+                            $('#intro-gif').fadeOut();
+                            $('#concert-block').animate({opacity:1},3000);
+                        },6000);
+                    });
+                },500);
+            }
+
+
+
         }
     });
     faq();
