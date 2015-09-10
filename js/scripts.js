@@ -18,12 +18,17 @@ jQuery(document).ready(function(){
     white('film');
     white('tickets');
     white('thanks');
-    var logo=$('#logo');
+    var logo=$('#bbash');
     logo.css({
         top:$(window).height()-120+'px',
-        left:$(window).width() *.45+'px'
+        left:$(window).width() *.40+'px'
+    });
+    $('#eaf').css({
+        top:$(window).height()-130+'px',
+        left:$(window).width() *.50+'px'
     });
     $('#logo-1').on('click',function(){scrollTo('#home')});
+    $('#logo-2').on('click',function(){window.location.href = "eaf/index.html";});
     $('#concert-button').on('click',function(){scrollTo('#concert-page')});
     $('#film-button').on('click',function(){scrollTo('#film-page')});
     $('#festival-button').on('click',function(){scrollTo('#festival-page')});
@@ -33,9 +38,9 @@ jQuery(document).ready(function(){
     var counter=0;
     $(window).scroll(function(){
         if($(window).scrollTop()>($(document).height() *.05)){
-            logo.fadeIn('slow');
+            $(".logo-buttons").fadeIn('slow');
         }else{
-            logo.fadeOut('slow');
+            $(".logo-buttons").fadeOut('slow');
         }
 
         if($('#concert-page').height()<$(window).scrollTop()){
@@ -46,7 +51,7 @@ jQuery(document).ready(function(){
                         setTimeout(function(){
                             $('#intro-gif').fadeOut();
                             $('#concert-block').fadeIn();
-                        },5000);
+                        },6000);
                     });
                 },500);
             }

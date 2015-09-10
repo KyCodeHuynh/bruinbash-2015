@@ -143,12 +143,13 @@ body{
 .top{  top:-30%;  }
 .middle{  top:0;  }
 .bottom{  top:30%;  }
-#logo{
+.logo{
     position:fixed;
     width:10%;
-    display:none;
     cursor:pointer;
 }
+
+.logo-buttons{display:none;}
 
 /*Rotating text*/
 @-webkit-keyframes right-spin {
