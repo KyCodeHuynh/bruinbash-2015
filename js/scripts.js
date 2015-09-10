@@ -5,7 +5,9 @@
 jQuery(document).ready(function(){
 
     //$('body').height($(document).height()*1.75);
-
+    $.ajax('threelogos.html',{
+        success:function(data){$('.3logos').html(data).fadeIn()}
+    });
 
     white('concerts');
     white('festival');
@@ -41,13 +43,10 @@ jQuery(document).ready(function(){
                         setTimeout(function(){
                             $('#intro-gif').fadeOut();
                             $('#concert-block').fadeIn();
-                        },4500);
+                        },5000);
                     });
                 },500);
             }
-
-
-
         }
     });
     faq();
@@ -73,6 +72,15 @@ function scrollTo(id){
 }
 
 function faq(){
+    $.ajax('faq-answers/tickets.html',{
+        success:function(data){$('#faq-answers').html(data).fadeIn()}
+    });
+    $('#faq-film').on('click',function(){
+        $('.answers').remove();
+        $.ajax('faq-answers/films.html',{
+            success:function(data){$('#faq-answers').html(data).fadeIn()}
+        });
+    });
     $('#faq-ticket').on('click',function(){
         $('.answers').remove();
         $.ajax('faq-answers/tickets.html',{

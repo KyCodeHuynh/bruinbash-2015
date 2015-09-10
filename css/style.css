@@ -264,6 +264,7 @@ body{
 a:hover{ color:white; }
 a{color:black; cursor:pointer;}
 #faq-answers{  height:300px; overflow:scroll; overflow-x:hidden; }
+#faq-answers a{ color:blue;}
 .first-time{overflow:hidden;}
 
 #faq-answers::-webkit-scrollbar{width:1em;}
@@ -283,4 +284,4 @@ a{color:black; cursor:pointer;}
 #intro-gif{display:none;position:relative; z-index:10;}
 
 /*Festival*/
-
+.underline{text-decoration: underline;}
