@@ -8,6 +8,9 @@ jQuery(document).ready(function(){
     $.ajax('threelogos.html',{
         success:function(data){$('.3logos').html(data).fadeIn()}
     });
+    $.ajax('madeon-gif.html',{
+        success:function(data){$('#madeon-gif').html(data).fadeIn()}
+    });
 
     white('concerts');
     white('festival');
