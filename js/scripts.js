@@ -28,7 +28,7 @@ jQuery(document).ready(function(){
         left:$(window).width() *.50+'px'
     });
     $('#logo-1').on('click',function(){scrollTo('#home')});
-    $('#logo-2').on('click',function(){window.location.href = "eaf/index.html";});
+    $('#logo-2').on('click',function(){window.location.href = "eaf/eaf.html";});
     $('#concert-button').on('click',function(){scrollTo('#concert-page')});
     $('#film-button').on('click',function(){scrollTo('#film-page')});
     $('#festival-button').on('click',function(){scrollTo('#festival-page')});
