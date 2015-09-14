@@ -50,7 +50,7 @@ jQuery(document).ready(function(){
                     $('#intro-gif').fadeIn(2000,function(){
                         setTimeout(function(){
                             $('#intro-gif').fadeOut();
-                            $('#concert-block').fadeIn();
+                            $('#concert-block').fadeIn(3000);
                         },6000);
                     });
                 },500);
