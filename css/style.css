@@ -222,6 +222,7 @@ body{
     -o-animation: right-spin 10s linear 0s infinite;
     animation: right-spin 10s linear 0s infinite;
     transform-origin: 40% 50% 0;
+    -webkit-transform-origin:40% 50% 0;
 }
 
 /*Triple line*/
