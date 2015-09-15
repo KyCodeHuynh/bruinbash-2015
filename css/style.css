@@ -294,6 +294,8 @@ a{color:black; cursor:pointer;}
     margin-bottom:3%;
 }
 
+#nxworries a{ color:blue; }
+
 #intro-gif{display:none;position:relative; z-index:10;}
 
 /*Festival*/
