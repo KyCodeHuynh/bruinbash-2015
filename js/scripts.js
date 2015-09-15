@@ -48,6 +48,10 @@ jQuery(document).ready(function(){
                 counter++;
                 setTimeout(function(){
                     $('#intro-gif').fadeIn(2000,function(){
+                        $('#intro-gif').on('click',function(){
+                            $('#intro-gif').fadeOut();
+                            $('#concert-block').fadeIn(3000);
+                        });
                         setTimeout(function(){
                             $('#intro-gif').fadeOut();
                             $('#concert-block').fadeIn(3000);

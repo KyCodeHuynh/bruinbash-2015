@@ -285,6 +285,15 @@ a{color:black; cursor:pointer;}
     transform: skew(10deg);
 }
 
+#artist-2{
+    -webkit-transform: skew(-10deg);
+    -moz-transform: skew(-10deg);
+    -ms-transform: skew(-10deg);
+    -o-transform: skew(-10deg);
+    transform: skew(-10deg);
+    margin-bottom:3%;
+}
+
 #intro-gif{display:none;position:relative; z-index:10;}
 
 /*Festival*/
